@@ -32,7 +32,7 @@ export const DropDownListContainer = styled("div")`
 export const DropDownList = styled("ul")`
   padding: 0;
   margin: 0;
-  padding-left: 1em;
+  // padding-left: 1em;
   box-sizing: border-box;
   color: white
   font-size: 1.3rem;

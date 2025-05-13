@@ -26,11 +26,6 @@ export const ButtonContainer = styled.div`
   bottom: 2rem;
   right: 2rem;
   z-index: 1000;
-  
-  &:hover {
-    color: black;
-    background-color: white;
-  }
 `;
 
 export const StyledText = styled.div`

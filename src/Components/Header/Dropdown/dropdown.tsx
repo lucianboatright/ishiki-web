@@ -39,7 +39,7 @@ const Dropdown: React.FC<DropdownProps> = ({ dropDownItems, header }) => {
           <DropDownListContainer>
             <DropDownList>
               {dropDownItems.map((dropDownItems) => (
-                <ListItem onClick={onOptionClicked(formatString(dropDownItems))}  key={Math.random()}>
+                <ListItem onClick={onOptionClicked(formatString(dropDownItems))} key={Math.random()}>
                   {dropDownItems}
                 </ListItem>
               ))}
