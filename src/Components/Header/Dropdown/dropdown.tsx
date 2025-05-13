@@ -15,10 +15,15 @@ function formatString(input: string): string {
 
 const Dropdown: React.FC<DropdownProps> = ({ dropDownItems, header }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpenHover, setIsOpenHover] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
   
     const toggling = () => setIsOpen(!isOpen);
-  
+    
+    const hoverToggling = () => setIsOpenHover(true);
+    
+    const hoverTogglingClose = () => setIsOpenHover(false);
+
     const onOptionClicked = (value: any) => () => {
       setSelectedOption(value);
       setIsOpen(false);
@@ -32,10 +37,10 @@ const Dropdown: React.FC<DropdownProps> = ({ dropDownItems, header }) => {
   
     return (
         <DropDownContainer>
-        <DropDownHeader onClick={toggling}>
+        <DropDownHeader onClick={toggling} onMouseOver={hoverToggling} onMouseLeave={hoverTogglingClose}>
           {header}
         </DropDownHeader>
-        {isOpen && (
+        {(isOpen || isOpenHover) && (
           <DropDownListContainer>
             <DropDownList>
               {dropDownItems.map((dropDownItems) => (
