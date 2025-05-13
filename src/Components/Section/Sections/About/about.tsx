@@ -4,7 +4,7 @@ import TextComponent from '../../../TextComponents/TextImageComponent/textImageC
 
 const BioSection: React.FC = () => {
   return (
-    <Section id="bio" title="Bio">
+    <Section id="bio">
         <TextComponent title='Ishiki Bio' subTitle='Sed ut perspiciatis' textBody='    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
                 consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
                 quisquam est.<br /><br /> 

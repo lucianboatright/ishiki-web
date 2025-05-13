@@ -13,6 +13,7 @@ export const Section = styled.section`
   `;
   
   export const Grid = styled.div`
+  margin-top: 4rem;
     margin-left: 50px;
     display: grid;
     gap: 3rem;

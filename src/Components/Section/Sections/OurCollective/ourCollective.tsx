@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Section from '../../section';
-import { Grid, Title } from './ourCollective.styles';
+import { Grid } from './ourCollective.styles';
 import TeamNameComponent from '../../../TextComponents/TeamName/teamName';
 
 const members = [
@@ -18,8 +18,7 @@ const members = [
 
 const CollectiveSection: React.FC = () => {
   return (
-    <Section>
-      <Title>Our Collective</Title>
+    <Section id='ourCollective' title='Our Collective'>
       <Grid>
         {members.map((member, index) => (
           <TeamNameComponent key={index} {...member} />
