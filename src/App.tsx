@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './Components/Header/header';
 import About from './Components/Section/Sections/About/about';
 import Team from './Components/Section/Sections/Team/team';
-import Work from './Components/Section/Sections/Work/work';
 import OurMission from './Components/Section/Sections/OurMission/ourMission';
 import OurValues from './Components/Section/Sections/OurValues/ourValues';
 import OurLenses from './Components/Section/Sections/OurLense/ourLense';
