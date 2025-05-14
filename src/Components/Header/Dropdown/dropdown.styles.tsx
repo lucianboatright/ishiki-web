@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const DropDownContainer = styled("div")`
   width: 10.5em;
-  margin: 0 auto;
+  margin-left: 2rem;
 `;
 
 export const DropDownHeader = styled("div")`

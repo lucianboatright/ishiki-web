@@ -18,7 +18,6 @@ const VideoSection: React.FC<VideoSectionProps> = ({
         <video
             src="/videos/IshikiLogoCropped.mp4"
             autoPlay
-            // loop
             muted
             playsInline
             style={{ width: '100%', height: 'auto' }}
