@@ -87,8 +87,8 @@ const App: React.FC = () => {
       <Header />
       <main>
         <VideoSection section={'logo'} />
-        <About />
         <OurMission />
+        <About />
         <OurValues title='Our Values' ourValueItems={ourValuesData}/>
         <OurLenses title='Our Lenses' ourLensesItems={ourLensesData} />
         <VideoTextComponent   
