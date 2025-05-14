@@ -10,6 +10,7 @@ import CollectiveSection from './Components/Section/Sections/OurCollective/ourCo
 import Contact from './Components/Section/Sections/Contact/contact';
 import Footer from './Components/Footer/footer';
 import BackToTopButton from './Components/BackButton/backButton';
+import VideoSection from './Components/Section/Sections/VideoSection/videoSection';
 
   const ourValuesData = [
     {
@@ -85,6 +86,7 @@ const App: React.FC = () => {
     <>
       <Header />
       <main>
+        <VideoSection section={'logo'} />
         <About />
         <OurMission />
         <OurValues title='Our Values' ourValueItems={ourValuesData}/>

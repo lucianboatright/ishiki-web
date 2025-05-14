@@ -49,7 +49,6 @@ export const ListItem = styled("li")`
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   height: 2.2rem;
-  border: 1px solid black;
   background-color: white;
   color: black;
   align-content: center;
