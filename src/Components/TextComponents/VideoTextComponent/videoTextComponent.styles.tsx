@@ -14,6 +14,10 @@ export const SectionWrapper = styled.section`
   padding-bottom: 2rem;
   padding-top: 2rem;
    margin-left: 50px;
+   @media (max-width: 768px) {
+    margin-right: 1remx;
+    margin-left: 1rem;
+   }
 `;
 
 export const Title = styled.h2`
@@ -28,6 +32,9 @@ export const Paragraph = styled.p`
   width: 50%;
   line-height: 1.6;
   font-weight: 100;
+  @media (max-width: 768px) {
+      width: 100%;
+  }
 `;
 
 export const CreditsTitle = styled.h3`

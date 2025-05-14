@@ -17,6 +17,10 @@ export const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-   margin-left: 50px;
-   margin-top: 5rem;
+  margin-left: 50px;
+  margin-top: 5rem;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+  }
 `;

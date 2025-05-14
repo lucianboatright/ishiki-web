@@ -7,6 +7,9 @@ export const SectionWrapper = styled.section`
   display: flex;
   justify-content: center;
   font-family: 'Helvetica', sans-serif;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -16,8 +19,7 @@ export const ContentWrapper = styled.div`
   gap: 10%;
   
   @media (max-width: 768px) {
-    gap: 2%;
-    flex-direction: column;
+    display: block;
   }
 `;
 

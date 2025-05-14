@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { DropDownContainer, DropDownHeader, DropDownListContainer, DropDownList, ListItem } from './dropdown.styles';
 
 interface DropdownProps {
-    dropDownItems: string[];
+    dropDownItems?: string[];
     header: string;
 }
 
@@ -40,17 +40,21 @@ const Dropdown: React.FC<DropdownProps> = ({ dropDownItems, header }) => {
         <DropDownHeader onClick={toggling} onMouseOver={hoverToggling} onMouseLeave={hoverTogglingClose}>
           {header}
         </DropDownHeader>
-        {(isOpen || isOpenHover) && (
-          <DropDownListContainer>
-            <DropDownList>
-              {dropDownItems.map((dropDownItems) => (
-                <ListItem onClick={onOptionClicked(formatString(dropDownItems))} key={Math.random()}>
-                  {dropDownItems}
-                </ListItem>
-              ))}
-            </DropDownList>
-          </DropDownListContainer>
-        )}
+        {dropDownItems &&      
+        <>
+          {(isOpen || isOpenHover) && (
+            <DropDownListContainer>
+              <DropDownList>
+                {dropDownItems.map((dropDownItems) => (
+                  <ListItem onClick={onOptionClicked(formatString(dropDownItems))} key={Math.random()}>
+                    {dropDownItems}
+                  </ListItem>
+                ))}
+              </DropDownList>
+            </DropDownListContainer>
+          )}
+        </>  
+        }
       </DropDownContainer>
     )
 };

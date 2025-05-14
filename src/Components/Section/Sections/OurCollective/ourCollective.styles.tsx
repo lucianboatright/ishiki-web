@@ -19,4 +19,9 @@ export const Section = styled.section`
     gap: 3rem;
     grid-template-columns: repeat(4, 1fr);
     max-width: 60rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1rem;
+    }
 `;
