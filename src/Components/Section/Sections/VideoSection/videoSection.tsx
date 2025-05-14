@@ -21,7 +21,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
             // loop
             muted
             playsInline
-            style={{ width: '100%', height: '10rem' }}
+            style={{ width: '100%', height: 'auto' }}
         />
     </Section>
   );
