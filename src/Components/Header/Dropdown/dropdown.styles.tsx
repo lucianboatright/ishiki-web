@@ -17,9 +17,13 @@ export const DropDownHeader = styled("div")`
   font-size: 1rem;
   font-weight: bold;
 
-  &:hover {
-    background-position: left bottom;
-    color: black;
+  // &:hover {
+  //   background-position: left bottom;
+  //   color: black;
+  // }
+
+  ${DropDownContainer}:hover & {
+    background-color: #3e8e41;
   }
 `;
 
@@ -29,7 +33,7 @@ export const DropDownListContainer = styled("div")`
   width: 10.5em;
 `;
 
-export const DropDownList = styled("ul")`
+export const DropDownList = styled("div")`
   padding: 0;
   margin: 0;
   // padding-left: 1em;
@@ -37,12 +41,16 @@ export const DropDownList = styled("ul")`
   color: white
   font-size: 1.3rem;
   font-weight: 500;
+  display: none;
   &:first-child {
     padding-top: 0.8em;
   }
+    ${DropDownContainer}:hover & {
+    display: block;
+  }
 `;
 
-export const ListItem = styled("li")`
+export const ListItem = styled("div")`
   list-style: none;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -52,6 +60,7 @@ export const ListItem = styled("li")`
   background-color: white;
   color: black;
   align-content: center;
+  font-size: 10px;
   &:hover {
     color: grey;
   }

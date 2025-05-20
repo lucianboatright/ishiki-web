@@ -44,7 +44,7 @@ const Header: React.FC = () => {
 
         {isOpen && (
           <MobileMenu>
-            <Dropdown header="About" />
+            {/* <Dropdown header="About" dropDownItems={[]} /> */}
             <StyledList>
 
                     <ListItem onClick={onOptionClicked(formatString('Bio'))} key={Math.random()}>

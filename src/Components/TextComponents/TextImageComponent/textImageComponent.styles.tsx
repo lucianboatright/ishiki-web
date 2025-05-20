@@ -71,7 +71,7 @@ export const SubTitle = styled.h2`
   margin-bottom: 1.5rem;
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.div`
   margin-bottom: 1rem;
   line-height: 2;
   font-weight: 100;

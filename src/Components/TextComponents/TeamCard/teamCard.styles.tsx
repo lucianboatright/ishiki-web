@@ -4,7 +4,7 @@ export const Card = styled.div`
   display: block;
 //   align-items: flex-start;
   gap: 1.5rem;
-  width: 30rem;
+  max-width: 30rem;
   margin-bottom: 3rem;
 `;
 
@@ -23,13 +23,16 @@ export const Info = styled.div`
 export const Name = styled.h3`
   font-size: 1rem;
   margin: 0;
-  font-weight: bold;
+  // font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 100;
 `;
 
 export const Title = styled.p`
   font-size: 0.875rem;
-  margin: 0 0 0.5rem;
-  font-weight: 600;
+  margin: 1 1 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
 `;
 
 export const Description = styled.p`

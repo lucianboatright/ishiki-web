@@ -3,14 +3,19 @@ import styled from 'styled-components';
 export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
   position: relative;
   background: black;
   color: white;
+  height: 3rem; 
 `;
 
 export const Logo = styled.div`
+  // position: fixed;
+  // top: 1rem;
+  // left: 40px;
+  // z-index: 1000; 
+  // margin-right:
   img {
     height: 40px;
   }
@@ -19,6 +24,7 @@ export const Logo = styled.div`
 export const MenueWrapper = styled.nav`
   display: flex;
   gap: 2rem;
+  margin-left: 200px;
 
   @media (max-width: 768px) {
     display: none;

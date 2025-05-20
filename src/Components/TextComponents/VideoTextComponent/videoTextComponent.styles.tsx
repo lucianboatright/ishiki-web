@@ -15,7 +15,7 @@ export const SectionWrapper = styled.section`
   padding-top: 2rem;
    margin-left: 50px;
    @media (max-width: 768px) {
-    margin-right: 1remx;
+    margin-right: 1rem;
     margin-left: 1rem;
    }
 `;

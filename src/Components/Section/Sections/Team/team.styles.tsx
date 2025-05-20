@@ -22,5 +22,6 @@ export const Section = styled.section`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     margin-left: 1rem;
+    margin-right: 1rem;
   }
 `;
