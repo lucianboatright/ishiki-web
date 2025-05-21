@@ -5,7 +5,7 @@ import SimpleTextComponent from '../../../TextComponents/SimpleTextComponent/sim
 const OurMission: React.FC = () => {
   return (
     <Section id="ourMission">
-        <SimpleTextComponent title='OUR MISSION' textBody='Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.'/>
+        <SimpleTextComponent title='OUR MISSION' textBody='We are a for-profit studio with not for profit hearts, creating real-world change with deeply crafted, immersive storytelling.'/>
     </Section>
   );
 };

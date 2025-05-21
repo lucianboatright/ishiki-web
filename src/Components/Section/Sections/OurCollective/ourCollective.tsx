@@ -5,15 +5,19 @@ import { Grid } from './ourCollective.styles';
 import TeamNameComponent from '../../../TextComponents/TeamName/teamName';
 
 const members = [
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
-  { name: 'Lorem Ipsum', role: 'Dolor sit amet' },
+  { name: 'Samual Duckett', role: 'Creative Producer' },
+  { name: 'Gabriela Takacova', role: 'Business Consultant' },
+  { name: 'Anisha Lanewala', role: 'Cinematographer' },
+  { name: 'Prarthana Gupta', role: 'Production Designer' },
+  { name: 'Petar Mrdjen', role: 'Sound Designer' },
+  { name: 'Giona Sem', role: 'Editor' },
+  { name: 'Aaryaman Kutty', role: 'Colorist' },
+  { name: 'Nicole Goode', role: 'Colorist' },
+  { name: 'Lena D’Helena', role: 'Hair & Make-up' },
+  { name: 'Freyja Sewell', role: 'Artistic Collaborator' },
+  { name: 'Karin Torbjörnsdóttir', role: 'Artistic Collaborator' },
+  { name: 'Hami.Studio', role: 'Branding & Design Studio' },
+  { name: 'Lucian Boatwright-Roberts', role: 'Full Stack Developer' },
 ];
 
 const CollectiveSection: React.FC = () => {

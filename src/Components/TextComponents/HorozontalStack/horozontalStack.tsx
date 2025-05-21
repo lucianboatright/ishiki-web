@@ -3,10 +3,11 @@ import { StyledContainer, StyledImage, StyledTextBody } from './horozontalStack.
 
 interface HorozontalStackComponentProps {
     img?: any;
+    title?: string;
     textBody?: string;
 }
 
-const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img, textBody }) => {
+const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img, textBody, title }) => {
   return (
     <>
     <StyledContainer>
@@ -14,6 +15,7 @@ const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img
         <StyledImage>
             {img}
         </StyledImage>
+        <div>{title}</div>
         <StyledTextBody>
             {textBody}
         </StyledTextBody>

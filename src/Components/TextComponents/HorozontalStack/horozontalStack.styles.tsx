@@ -16,10 +16,9 @@ export const StyledImage = styled("div")`
     
 
 export const StyledTextBody = styled("h3")`
-width: 14rem;
-    font-size: 1rem;
+    width: 11rem;
     font-weight: 100;
-    line-height: 1.8;
+    font-size: 1.5rem;
 `;
     
 

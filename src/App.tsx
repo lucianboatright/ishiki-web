@@ -11,57 +11,72 @@ import Contact from './Components/Section/Sections/Contact/contact';
 import Footer from './Components/Footer/footer';
 import BackToTopButton from './Components/BackButton/backButton';
 import VideoSection from './Components/Section/Sections/VideoSection/videoSection';
+import GlobalStyles from './GlobalStyles';
 
   const ourValuesData = [
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: '',
+      text: 'Approach filmmaking with deep awareness and purpose.',
+      letter: 'I',
+      colorLeft: 'black',
+      colorRight: 'grey',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: '',
+      text: 'Ensure technology and creativity grow together.',
+      letter: 'S',
+      colorLeft: 'rgba(0, 74, 173, 1)',
+      colorRight: 'rgba(83, 113, 255, 1)',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: '',
+      text: 'Create with integrity, truth, and emotional depth.',
+      letter: 'H',
+      colorLeft: 'rgba(75, 46, 143, 1)',
+      colorRight: ' rgba(149, 35, 140, 1)',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: '',
+      text: 'Welcome diverse voices and perspectives. We value our relationships.',
+      letter: 'I',
+      colorLeft: 'rgba(233, 23, 126, 1)',
+      colorRight: 'rgba(234, 37, 74, 1)',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: '',
+      text: 'Work with care, respect, and empathy for people and the planet.',
+      letter: 'K',
+      colorLeft: 'rgba(222, 109, 4, 1)',
+      colorRight: 'rgba(249, 218, 90, 1)',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
-    },
-    {
-      img: 'exampleImage2',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: '',
+      text: 'Create stories that challenge, inspire, and transform.',
+      letter: 'I',
+      colorLeft: 'rgba(128, 196, 63, 1)',
+      colorRight: 'rgba(66, 178, 72, 1)',
     },
   ];
   const ourLensesData = [
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: 'PRANA',
+      text: 'Empowering ourselves with knowledge on personal wellness & self development',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: 'SYNAPSE',
+      text: 'Exploring ways to ethically blend the evolution of humanity, AI & technology',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: 'RISE',
+      text: 'Mobilizing action for marginalized voices & humanitarian agendas',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: 'ANCESTOR',
+      text: 'Valuing Ancestral & Indigenous Wisdom & storytelling to further sustainable development ',
     },
     {
-      img: 'exampleImage1',
-      text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt. Neque porro quisquam est, qui dolorem',
+      img: 'BIOSPHERE',
+      text: 'Connecting to nature and sustainable solutions for the planet',
     },
   ];
 
@@ -84,6 +99,7 @@ import VideoSection from './Components/Section/Sections/VideoSection/videoSectio
 const App: React.FC = () => {
   return (
     <>
+    <GlobalStyles />
       <Header />
       <main>
         <VideoSection section={'logo'} />

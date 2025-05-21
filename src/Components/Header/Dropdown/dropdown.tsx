@@ -78,7 +78,7 @@ function formatString(input: string): string {
     .replace(/\s+/g, '');
 }
 interface DropdownProps {
-  dropDownItems: string[];
+  dropDownItems?: string[];
   header: string;
 }
 
@@ -99,11 +99,15 @@ const Dropdown: React.FC<DropdownProps> = ({ header, dropDownItems }) => {
     <DropDownContainer>
       <DropDownHeader>{header}</DropDownHeader>
       <DropDownList>
+        {dropDownItems &&
+          <>
             {dropDownItems.map((dropDownItems, index) => (
-            <ListItem  key={index} onClick={onOptionClicked(formatString(dropDownItems))}>
-              {dropDownItems}
-            </ListItem>
-          ))}
+              <ListItem  key={index} onClick={onOptionClicked(formatString(dropDownItems))}>
+                {dropDownItems}
+              </ListItem>
+            ))}
+          </>
+        }
       </DropDownList>
     </DropDownContainer>
   );

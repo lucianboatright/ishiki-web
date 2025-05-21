@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Burger, HeaderWrapper, ListItem, Logo, MenueWrapper, MobileMenu, StyledList } from './header.styles';
+import { Burger, HeaderListItem, HeaderWrapper, ListItem, Logo, MenueWrapper, MobileMenu, StyledList } from './header.styles';
 import Dropdown from './Dropdown/dropdown';
 import logo from '../../assets/ISHIKI logo.jpg'
 
@@ -13,12 +13,9 @@ function formatString(input: string): string {
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-    const [selectedOption, setSelectedOption] = useState(null);
 
   const onOptionClicked = (value: any) => () => {
-    setSelectedOption(value);
     setIsOpen(false);
-    console.log(selectedOption);
     scrollToSection(value)
   };
 
@@ -39,7 +36,7 @@ const Header: React.FC = () => {
           <Dropdown header="About" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
           <Dropdown header="Work" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
           <Dropdown header="Team" dropDownItems={['Core team', 'Our collective']} />
-          <Dropdown header="Contact" dropDownItems={['Contact']} />
+          <HeaderListItem onClick={onOptionClicked(formatString('Contact'))}>Contact</HeaderListItem>
         </MenueWrapper>
 
         {isOpen && (

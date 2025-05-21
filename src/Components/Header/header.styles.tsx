@@ -1,82 +1,93 @@
 import styled from 'styled-components';
+export const HeaderWrapper = styled.header({
+  display: 'flex',
+  justifyContent: 'space-between',
+  padding: '1rem 2rem',
+  position: 'relative',
+  background: 'black',
+  color: 'white',
+  height: '3rem',
+});
 
-export const HeaderWrapper = styled.header`
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  position: relative;
-  background: black;
-  color: white;
-  height: 3rem; 
-`;
+export const Logo = styled.div({
+  img: {
+    height: '40px',
+  },
+});
 
-export const Logo = styled.div`
-  // position: fixed;
-  // top: 1rem;
-  // left: 40px;
-  // z-index: 1000; 
-  // margin-right:
-  img {
-    height: 40px;
-  }
-`;
+export const MenueWrapper = styled.nav({
+  display: 'flex',
+  gap: '2rem',
+  marginLeft: '200px',
 
-export const MenueWrapper = styled.nav`
-  display: flex;
-  gap: 2rem;
-  margin-left: 200px;
+  '@media (max-width: 768px)': {
+    display: 'none',
+  },
+});
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
+export const Burger = styled.div({
+  display: 'none',
+  flexDirection: 'column',
+  gap: '6px',
+  cursor: 'pointer',
 
-export const Burger = styled.div`
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
+  span: {
+    height: '3px',
+    width: '24px',
+    background: 'white',
+    borderRadius: '2px',
+  },
 
-  span {
-    height: 3px;
-    width: 24px;
-    background: white;
-    border-radius: 2px;
-  }
+  '@media (max-width: 768px)': {
+    display: 'flex',
+  },
+});
 
-  @media (max-width: 768px) {
-    display: flex;
-  }
-`;
+export const MobileMenu = styled.div({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1rem',
+  background: 'black',
+  position: 'absolute',
+  top: '100%',
+  left: 0,
+  width: '100%',
+  padding: '1rem 2rem',
+  zIndex: 999,
 
-export const MobileMenu = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: black;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  z-index: 999;
+  '@media (min-width: 769px)': {
+    display: 'none',
+  },
+});
 
-  @media (min-width: 769px) {
-    display: none;
-  }
-`;
+export const ListItem = styled.div({
+  listStyle: 'none',
+  paddingLeft: '0.75rem',
+  paddingRight: '0.75rem',
+  height: '2.2rem',
+  backgroundColor: 'white',
+  color: 'black',
+  alignContent: 'center',
+});
 
-export const ListItem = styled("div")`
-  list-style: none;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  height: 2.2rem;
-  background-color: white;
-  color: black;
-  align-content: center;
+export const StyledList = styled.div({
+  marginLeft: '5rem',
+});
 
-`;
+export const HeaderListItem = styled.div({
+  padding: '0.75rem 1.5rem',
+  marginRight: '4rem',
+  background: 'linear-gradient(to right, white 50%, black 50%)',
+  backgroundSize: '200% 100%',
+  backgroundPosition: 'right bottom',
+  transition: 'background-position 0.5s ease, color 0.5s ease',
+  cursor: 'pointer',
+  fontSize: '1rem',
+  fontWeight: 'bold',
+  width: '9rem',
 
-export const StyledList = styled("div")`
-  margin-left: 5rem;
-`;
+  '&:hover': {
+    backgroundPosition: 'left bottom',
+    color: 'black',
+  },
+});

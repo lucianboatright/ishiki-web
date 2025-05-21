@@ -1,23 +1,25 @@
 import React from 'react';
 import Section from '../../section';
-import { StyledContainer, StyledTitle } from './ourValues.styes';
+import { StyledContainer, StyledContent, StyledTitle } from './ourValues.styes';
 import HorozontalStackomponent from '../../../TextComponents/VerticalStackStack/verticalStack';
 
 interface OurValuesComponentProps {
     title?: string;
-    ourValueItems: { img: any, text: string }[]
+    ourValueItems: { img: any, text: string, letter: string, colorLeft: string, colorRight: string }[]
 }
 
-const OurValues: React.FC<OurValuesComponentProps> = ({ title, ourValueItems}) => {
+const OurValues: React.FC<OurValuesComponentProps> = ({ title, ourValueItems }) => {
   return (
     <Section id="ourValues">
         <StyledContainer>
             <StyledTitle>
                 {title}   
             </StyledTitle>
-            {ourValueItems.map((ourValueItems) => (
-                    <HorozontalStackomponent textBody={ourValueItems.text} img={ourValueItems.img} />
-            ))}
+            <StyledContent>
+              {ourValueItems.map((ourValueItems) => (
+                      <HorozontalStackomponent textBody={ourValueItems.text} img={ourValueItems.img} letter={ourValueItems.letter} colorRight={ourValueItems.colorRight} colorLeft={ourValueItems.colorLeft} />
+              ))}
+            </StyledContent>
         </StyledContainer>
     </Section>
 
