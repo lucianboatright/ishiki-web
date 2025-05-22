@@ -37,15 +37,21 @@ const VideoTextComponent: React.FC<VideoTextComponentProps> = ({
 }) => {
   return (
     <Section id={section} title={sectionTitle}>
-        <VideoWrapper>
-            <ReactPlayer url="https://vimeo.com/843867279" controls width="100%" />
+        {/* <VideoWrapper>
+            <ReactPlayer   
+              url="https://vimeo.com/843867279"
+              controls
+              width="100%"
+              height="100%"
+              style={{ position: 'absolute', top: 0, left: 0 }}
+            /> */}
           {/* <StyledVideo 
             src={video}
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             title="Embedded Vimeo Video" 
           /> */}
-        </VideoWrapper>
+        {/* </VideoWrapper> */}
         <SectionWrapper>
         <Title>{title}</Title>
         {paragraphs.map((text, index) => (

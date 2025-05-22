@@ -12,6 +12,7 @@ import Footer from './Components/Footer/footer';
 import BackToTopButton from './Components/BackButton/backButton';
 import VideoSection from './Components/Section/Sections/VideoSection/videoSection';
 import GlobalStyles from './GlobalStyles';
+import ReactPlayer from 'react-player';
 
   const ourValuesData = [
     {
@@ -122,6 +123,11 @@ const App: React.FC = () => {
       <Header />
       <main>
         <VideoSection section={'logo'} />
+        <ReactPlayer
+  url="https://vimeo.com/843867279"
+  controls
+  width="100%"
+/>
         <OurMission />
         <About />
         <OurValues title='Our Values' ourValueItems={ourValuesData}/>
