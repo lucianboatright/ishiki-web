@@ -20,3 +20,9 @@ export const StyledContainer = styled('div')({
   marginTop: '15rem',
   marginBottom: '10rem',
 });
+
+export const StyledDiv = styled('div')({
+fontSize: '2rem',
+textOrientation: 'upright',
+writingMode: 'vertical-rl'
+});

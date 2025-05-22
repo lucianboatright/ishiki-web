@@ -1,67 +1,73 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const DropDownContainer = styled("div")`
-  width: 10.5em;
-  margin-left: 2rem;
-`;
+export const DropDownContainer = styled('div')({
+  width: '10.5em',
+  marginLeft: '2rem',
+});
 
-export const DropDownHeader = styled("div")`
-  padding: 0.75rem 1.5rem;
-  margin-right: 4rem;
-  background: linear-gradient(to right, white 50%, black 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  color: white;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  font-size: 1rem;
-  font-weight: bold;
+export const DropDownHeader = styled('div')({
+  padding: '0.75rem 1.5rem',
+  marginRight: '4rem',
+  background: 'linear-gradient(to right, white 50%, black 50%)',
+  backgroundSize: '200% 100%',
+  backgroundPosition: 'right bottom',
+  color: 'white',
+  cursor: 'pointer',
+  transition: 'background-position 0.4s ease, color 0.4s ease',
 
-  // &:hover {
-  //   background-position: left bottom;
-  //   color: black;
-  // }
+  fontSize: '1.5rem',
+  width: '9rem',
+  fontFamily: 'Helvetica, Arial, sans-serif',
+  fontWeight: 100,
 
-  ${DropDownContainer}:hover & {
-    background-color: #3e8e41;
-  }
-`;
 
-export const DropDownListContainer = styled("div")`
-  position: absolute;
-  z-index: 100;
-  width: 10.5em;
-`;
+  // Hover effect using parent component reference
+  [`${DropDownContainer}:hover &`]: {
+    backgroundPosition: 'left bottom',
+    color: 'black',
+  },
+});
 
-export const DropDownList = styled("div")`
-  padding: 0;
-  margin: 0;
-  // padding-left: 1em;
-  box-sizing: border-box;
-  color: white
-  font-size: 1.3rem;
-  font-weight: 500;
-  display: none;
-  &:first-child {
-    padding-top: 0.8em;
-  }
-    ${DropDownContainer}:hover & {
-    display: block;
-  }
-`;
+export const DropDownListContainer = styled('div')({
+  position: 'absolute',
+  zIndex: 100,
+});
 
-export const ListItem = styled("div")`
-  list-style: none;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  height: 2.2rem;
-  background-color: white;
-  color: black;
-  align-content: center;
-  font-size: 10px;
-  &:hover {
-    color: grey;
-  }
-`;
+export const DropDownList = styled('div')({
+  display: 'none',
+  padding: 0,
+  margin: 0,
+  boxSizing: 'border-box',
+  color: 'white',
+  fontSize: '1.3rem',
+  fontWeight: 500,
+
+  '&:first-child': {
+    paddingTop: '0.8em',
+  },
+
+  [`${DropDownContainer}:hover &`]: {
+    display: 'block',
+  },
+});
+
+export const ListItem = styled('div')({
+  listStyle: 'none',
+  marginBottom: '1.5rem',
+  marginTop: '1.5rem',
+  paddingLeft: '0.75rem',
+  paddingRight: '0.75rem',
+  height: '2.2rem',
+  backgroundColor: 'white',
+  color: 'black',
+  alignContent: 'center',
+  width: '10.5rem',
+
+  fontSize: '1rem',
+  cursor: 'pointer',
+
+  '&:hover': {
+    backgroundColor: 'black',
+    color: 'white',
+  },
+});

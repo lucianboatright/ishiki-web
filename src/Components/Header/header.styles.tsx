@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 export const HeaderWrapper = styled.header({
+  position: 'fixed',
+  top: '0',
+  left: '0',
   display: 'flex',
   justifyContent: 'space-between',
   padding: '1rem 2rem',
-  position: 'relative',
   background: 'black',
   color: 'white',
-  height: '3rem',
+  height: '2rem',
+  width: '100%',
+  zIndex: '1',
 });
 
 export const Logo = styled.div({
@@ -18,7 +22,6 @@ export const Logo = styled.div({
 export const MenueWrapper = styled.nav({
   display: 'flex',
   gap: '2rem',
-  marginLeft: '200px',
 
   '@media (max-width: 768px)': {
     display: 'none',
@@ -82,9 +85,10 @@ export const HeaderListItem = styled.div({
   backgroundPosition: 'right bottom',
   transition: 'background-position 0.5s ease, color 0.5s ease',
   cursor: 'pointer',
-  fontSize: '1rem',
-  fontWeight: 'bold',
+  fontSize: '1.4rem',
   width: '9rem',
+  fontFamily: 'Helvetica, Arial, sans-serif',
+  fontWeight: 100,
 
   '&:hover': {
     backgroundPosition: 'left bottom',

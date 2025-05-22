@@ -28,4 +28,5 @@ export const Role = styled.p({
   margin: 0,
   fontSize: '1.3rem',
   color: '#ccc',
+    fontStyle: 'italic'
 });

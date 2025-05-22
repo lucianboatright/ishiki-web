@@ -23,9 +23,13 @@ const Header: React.FC = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <HeaderWrapper>
-      <Logo><img src={logo} alt="ISHIKI" /></Logo>
+      <Logo><img onClick={scrollToTop} src={logo} alt="ISHIKI" /></Logo>
         <Burger onClick={() => setIsOpen(!isOpen)}>
           <span />
           <span />
@@ -41,7 +45,6 @@ const Header: React.FC = () => {
 
         {isOpen && (
           <MobileMenu>
-            {/* <Dropdown header="About" dropDownItems={[]} /> */}
             <StyledList>
 
                     <ListItem onClick={onOptionClicked(formatString('Bio'))} key={Math.random()}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../../section';
 import HorozontalStackComponent from '../../../TextComponents/HorozontalStack/horozontalStack';
-import { StyledContainer, StyledHorozontal, StyledTitle } from './ourLense.styles';
+import { StyledContainer, StyledDiv, StyledHorozontal, StyledTitle } from './ourLense.styles';
 
 interface OurLensesComponentProps {
     title?: string;
@@ -15,6 +15,7 @@ const OurLenses: React.FC<OurLensesComponentProps> = ({ title = 'sdfasdfasdfasdf
             <StyledTitle>
                 {title}   
             </StyledTitle>
+            
             <StyledHorozontal>
 
                 {ourLensesItems.map((ourLensesItem) => (

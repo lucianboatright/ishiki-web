@@ -5,7 +5,7 @@ interface TeamCardProps {
   image: string;
   name: string;
   title: string;
-  description: string;
+  description?: string;
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({
@@ -20,7 +20,9 @@ const TeamCard: React.FC<TeamCardProps> = ({
       <Info>
         <Name>{name}</Name>
         <Title>{title}</Title>
-        <Description>{description}</Description>
+        {description && 
+          <Description>{description}</Description>
+        }
       </Info>
     </Card>
   );

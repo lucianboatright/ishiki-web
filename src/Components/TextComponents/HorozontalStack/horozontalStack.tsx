@@ -1,5 +1,6 @@
 import React from 'react';
 import { SquareLogo, StyledContainer, StyledTextBody } from './horozontalStack.styles';
+import { StyledDiv } from '../../Section/Sections/OurLense/ourLense.styles';
 
 interface HorozontalStackComponentProps {
     img?: any;
@@ -13,7 +14,11 @@ const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img
   return (
     <>
     <StyledContainer>
+      <div>
+
         <SquareLogo FirstColor={colorTop} SecondColor={colorBottom} />
+        <StyledDiv>BIOSPHERE</StyledDiv>
+      </div>
         <div>{title}</div>
         <StyledTextBody>
             {textBody}

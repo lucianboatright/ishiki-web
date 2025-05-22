@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, ButtonContainer, StyledText } from './backButton.styles';
-
+import {ReactComponent as Arrow} from '../../assets/logo/arrowSvg.svg'
 
 const BackToTopButton: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -23,7 +23,7 @@ const BackToTopButton: React.FC = () => {
   return (
     <>
         <ButtonContainer>
-            <Button onClick={scrollToTop}>↑</Button>
+            <Button onClick={scrollToTop}><Arrow style={{ fill: 'white', transform: 'rotate(90deg)' }}/></Button>
             <StyledText>Back to top</StyledText>
         </ButtonContainer>
     </>

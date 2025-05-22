@@ -17,8 +17,9 @@ export const DropDownHeader = styled("div")`
   cursor: pointer;
   transition: background-position 0.4s ease, color 0.4s ease;
 
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
 
   width: 9rem;
 
@@ -64,9 +65,11 @@ export const ListItem = styled("div")`
     width: 10.5rem;
 
     font-size: 1rem;
+    cursor: pointer;
 
   &:hover {
-    color: grey;
+    background-color: black;
+    color: white;
   }
 `;
 

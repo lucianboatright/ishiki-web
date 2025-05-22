@@ -7,6 +7,7 @@ export const SectionWrapper = styled.section({
   display: 'flex',
   justifyContent: 'center',
   fontFamily: "'Helvetica', sans-serif",
+  backgroundColor: 'black',
 
   '@media (max-width: 768px)': {
     padding: 0,

@@ -1,27 +1,30 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
-  background: black;
-  padding: 3rem;
-  color: white;
-  `;
-  
-  export const Title = styled.h2`
-  margin-left: 50px;
-  font-size: 2rem;
-  margin-bottom: 5rem;
-  `;
-  
-  export const Grid = styled.div`
-  margin-top: 4rem;
-    margin-left: 50px;
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 60rem;
+export const Section = styled.section({
+  background: 'black',
+  padding: '3rem',
+  color: 'white',
+});
 
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 1rem;
-    }
-`;
+export const Title = styled.h2({
+  marginLeft: '50px',
+  fontSize: '2rem',
+  marginBottom: '5rem',
+});
+
+export const Grid = styled.div(({ theme }) => ({
+  marginRight: '40px',
+  width: '90%',
+  marginTop: '4rem',
+  marginLeft: '50px',
+  display: 'grid',
+  gap: '3rem',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+  // maxWidth: '60rem',
+
+  [`@media (max-width: 768px)`]: {
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    marginLeft: '1rem',
+  },
+}));
+
