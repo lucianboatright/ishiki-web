@@ -8,6 +8,15 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
+
+  @font-face {
+    font-family: 'Newsreader';
+    src: url('Fonts/Newsreader/Newsreader-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+
   body {
     margin: 0;
     font-family: 'Newsreader', sans-serif;

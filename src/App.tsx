@@ -96,13 +96,22 @@ import GlobalStyles from './GlobalStyles';
     'Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.',
   ];
 
-  const VideoCredits = [
-    { role: 'Director', name: 'Lorem Ipsum' },
-    { role: 'Cinematographer', name: 'Lorem Ipsum' },
-    { role: 'Editor', name: 'Lorem Ipsum' },
-    { role: 'Colorist', name: 'Lorem Ipsum' },
-    { role: 'Sound Designer', name: 'Lorem Ipsum' },
-    { role: 'Graphics', name: 'Lorem Ipsum' },
+  const ForceStaring = [
+    { role: 'Natálie Paulásova', name: 'as Shakti (fire)' },
+    { role: 'Jakub Rašek', name: 'as Self, Shadow, Shiva (water)' },
+    { role: 'Fraser Roach', name: 'as Shadow Double' },
+
+  ];
+  const ForceMusic = [
+    { role: 'Son of Dathomir', name: 'by Nior' },
+    { role: 'Written & Directed by', name: 'Elena Omura' },
+    { role: 'Choreography by', name: 'Natálie Paulásova, Jakub Rašek, Fraser Roach' },
+    { role: 'Cinematography by ', name: 'Anisha Lanewala' },
+    { role: 'Production Design by', name: 'Prarthana Gupta' },
+    { role: 'Costume by', name: "Lena d’ Helena" },
+    { role: 'Make-up by ', name: 'Elise Ann Brady' },
+    { role: 'Edit & Colour Grade by', name: 'Nicole Goode' },
+    { role: 'Music Mastered by', name: 'David Třebický (YOGA Studio)' },
   ];
 
 
@@ -120,27 +129,29 @@ const App: React.FC = () => {
         <VideoTextComponent   
           sectionTitle='Work'
           section='everyDropCounts'   
-          image='image' 
+          video='image' 
           title="Every Drop Counts Blurb"
           paragraphs={VideoParagraphs}
-          creditsTitle="Film Credits"
-          credits={VideoCredits}
+          firstreditsTitle="Film Credits"
+          firstCredits={ForceStaring}
         />
         <VideoTextComponent   
           section='unifiedField'   
-          image='image' 
+          video='image' 
           title="Unified Fields"
           paragraphs={VideoParagraphs}
-          creditsTitle="Film Credits"
-          credits={VideoCredits}
+          firstreditsTitle="Film Credits"
+          firstCredits={ForceStaring}
         />
         <VideoTextComponent   
           section='theForce'   
-          image='image' 
+          video={'https://vimeo.com/843867279'}
           title="The Force"
-          paragraphs={VideoParagraphs}
-          creditsTitle="Film Credits"
-          credits={VideoCredits}
+          paragraphs={['An experimental dance music video, which explores the "selves" that one may encounter, on an introspective journey.']}
+          firstreditsTitle="Staring"
+          firstCredits={ForceStaring}
+          secondCreditsTitle={'Music'}
+          secondCredits={ForceMusic}
         />
         <Team />
         <CollectiveSection />

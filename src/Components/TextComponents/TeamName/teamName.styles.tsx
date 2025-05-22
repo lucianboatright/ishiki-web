@@ -4,9 +4,8 @@ import styled from 'styled-components';
 export const Card = styled.div({
   textAlign: 'left',
   width: '20rem',
-  position: 'relative', // Needed for positioning the ::before
+  position: 'relative', 
 
-  // Add pseudo-element styles
   '&::before': {
     content: "''",
     position: 'absolute',
