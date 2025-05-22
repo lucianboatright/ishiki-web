@@ -67,10 +67,6 @@ export const CreditName = styled('span')({
 });
 
 export const StyledVideo = styled('iframe')({
-  // display: 'flex',
-  // backgroundColor: 'grey',
-  // width: '100%',
-  // height: '35rem',
     position: 'absolute',
   top: '0',
   left: '0',
