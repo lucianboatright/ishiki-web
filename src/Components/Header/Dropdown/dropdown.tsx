@@ -65,10 +65,10 @@ export const ListItem = styled("div")`
     width: 10.5rem;
 
     font-size: 1rem;
-    cursor: pointer;
-
-  &:hover {
-    background-color: black;
+    
+    &:hover {
+      background-color: black;
+      cursor: pointer;
     color: white;
   }
 `;
