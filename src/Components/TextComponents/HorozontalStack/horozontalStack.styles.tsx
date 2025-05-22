@@ -22,3 +22,24 @@ export const StyledTextBody = styled("h3")`
 `;
     
 
+export const StyledSvg = styled("img")`
+    width: 100px;
+    height: 50px;
+`;
+    
+interface InfoBarColorProps {
+    FirstColor?: string;
+    SecondColor?: string; 
+}
+
+export const SquareLogo = styled.div<InfoBarColorProps>((props) => ({
+    width: '175px',
+    height: '75px',
+    fontSize: '25px',
+    color: 'white',
+    textAlign: 'center',
+    fontWeight: '100',
+    alignContent: 'center',
+    background: `linear-gradient(95deg,${props.FirstColor}, ${props.SecondColor})`,
+
+}));

@@ -16,7 +16,7 @@ const TextComponent: React.FC<TextComponentProps> = ({ title, subTitle, textBody
               <Title>{title}</Title>
               <SubTitle>{subTitle}</SubTitle>
               <Paragraph>
-              <div dangerouslySetInnerHTML={{ __html: textBody || 'string'}}></div>
+                <div dangerouslySetInnerHTML={{ __html: textBody || 'string'}}></div>
               </Paragraph>
               </TextColumn>
               <ImageColumn />

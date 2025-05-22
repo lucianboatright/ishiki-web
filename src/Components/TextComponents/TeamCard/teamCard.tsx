@@ -2,21 +2,21 @@ import React from 'react';
 import { Card, Avatar, Info, Name, Title, Description } from './teamCard.styles';
 
 interface TeamCardProps {
-  imageUrl: string;
+  image: string;
   name: string;
   title: string;
   description: string;
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({
-  imageUrl,
+  image,
   name,
   title,
   description,
 }) => {
   return (
     <Card>
-      <Avatar src={imageUrl} alt={name} />
+      <Avatar src={image} alt={name} />
       <Info>
         <Name>{name}</Name>
         <Title>{title}</Title>

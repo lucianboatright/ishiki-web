@@ -1,14 +1,14 @@
 import React from 'react';
 import Section from '../../section';
-import VerticalStackComponent from '../../../TextComponents/HorozontalStack/horozontalStack';
+import HorozontalStackComponent from '../../../TextComponents/HorozontalStack/horozontalStack';
 import { StyledContainer, StyledHorozontal, StyledTitle } from './ourLense.styles';
 
 interface OurLensesComponentProps {
     title?: string;
-    ourLensesItems: { img: any, text: string }[]
+    ourLensesItems: { img: any, text: string, colorTop: string, colorBottom: string }[]
 }
 
-const OurLenses: React.FC<OurLensesComponentProps> = ({ title, ourLensesItems}) => {
+const OurLenses: React.FC<OurLensesComponentProps> = ({ title = 'sdfasdfasdfasdf', ourLensesItems}) => {
   return (
     <Section id="ourLenses">
         <StyledContainer>
@@ -18,7 +18,7 @@ const OurLenses: React.FC<OurLensesComponentProps> = ({ title, ourLensesItems}) 
             <StyledHorozontal>
 
                 {ourLensesItems.map((ourLensesItem) => (
-                        <VerticalStackComponent textBody={ourLensesItem.text} img={ourLensesItem.img} />
+                        <HorozontalStackComponent textBody={ourLensesItem.text} img={ourLensesItem.img} colorTop={ourLensesItem.colorTop} colorBottom={ourLensesItem.colorBottom} />
                 ))}
             </StyledHorozontal>
         </StyledContainer>

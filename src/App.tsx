@@ -59,23 +59,33 @@ import GlobalStyles from './GlobalStyles';
   ];
   const ourLensesData = [
     {
-      img: 'PRANA',
+      img: '',
+      colorTop: 'rgba(0, 74, 173, 1)',
+      colorBottom: 'rgba(83, 113, 255, 1)',
       text: 'Empowering ourselves with knowledge on personal wellness & self development',
     },
     {
-      img: 'SYNAPSE',
+      img: '',
+      colorTop: 'rgba(75, 46, 143, 1)',
+      colorBottom: ' rgba(149, 35, 140, 1)',
       text: 'Exploring ways to ethically blend the evolution of humanity, AI & technology',
     },
     {
-      img: 'RISE',
+      img: '',
+      colorTop: 'rgba(233, 23, 126, 1)',
+      colorBottom: 'rgba(234, 37, 74, 1)',
       text: 'Mobilizing action for marginalized voices & humanitarian agendas',
     },
     {
-      img: 'ANCESTOR',
+      img: '',
+      colorTop: 'rgba(222, 109, 4, 1)',
+      colorBottom: 'rgba(249, 218, 90, 1)',
       text: 'Valuing Ancestral & Indigenous Wisdom & storytelling to further sustainable development ',
     },
     {
-      img: 'BIOSPHERE',
+      img: '',
+      colorTop: 'rgba(128, 196, 63, 1)',
+      colorBottom: 'rgba(66, 178, 72, 1)',
       text: 'Connecting to nature and sustainable solutions for the planet',
     },
   ];
