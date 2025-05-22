@@ -1,24 +1,25 @@
 import React from 'react';
-import { SquareLogo, StyledContainer, StyledTextBody } from './horozontalStack.styles';
-import { StyledDiv } from '../../Section/Sections/OurLense/ourLense.styles';
+import { SquareLogo, StyledColorSection, StyledContainer, StyledDiv, StyledTextBody } from './horozontalStack.styles';
 
 interface HorozontalStackComponentProps {
     img?: any;
+    sectionTitle?: string;
     title?: string;
     textBody?: string;
     colorTop: string;
     colorBottom: string;
 }
 
-const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img, textBody, title, colorTop, colorBottom }) => {
+const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img, textBody, title, colorTop, colorBottom, sectionTitle }) => {
   return (
     <>
     <StyledContainer>
-      <div>
+      <StyledColorSection>
+        <SquareLogo FirstColor={colorTop} SecondColor={colorBottom}>
 
-        <SquareLogo FirstColor={colorTop} SecondColor={colorBottom} />
-        <StyledDiv>BIOSPHERE</StyledDiv>
-      </div>
+        <StyledDiv>{sectionTitle}</StyledDiv>
+        </SquareLogo>
+      </StyledColorSection>
         <div>{title}</div>
         <StyledTextBody>
             {textBody}

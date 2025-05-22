@@ -5,7 +5,7 @@ import { StyledContainer, StyledHorozontal, StyledTitle } from './ourLense.style
 
 interface OurLensesComponentProps {
     title?: string;
-    ourLensesItems: { img: any, text: string, colorTop: string, colorBottom: string }[]
+    ourLensesItems: { img: any, text: string, colorTop: string, colorBottom: string, sectionTitle: string }[]
 }
 
 const OurLenses: React.FC<OurLensesComponentProps> = ({ title = 'sdfasdfasdfasdf', ourLensesItems}) => {
@@ -19,7 +19,7 @@ const OurLenses: React.FC<OurLensesComponentProps> = ({ title = 'sdfasdfasdfasdf
             <StyledHorozontal>
 
                 {ourLensesItems.map((ourLensesItem) => (
-                        <HorozontalStackComponent textBody={ourLensesItem.text} img={ourLensesItem.img} colorTop={ourLensesItem.colorTop} colorBottom={ourLensesItem.colorBottom} />
+                        <HorozontalStackComponent textBody={ourLensesItem.text} img={ourLensesItem.img} colorTop={ourLensesItem.colorTop} colorBottom={ourLensesItem.colorBottom} sectionTitle={ourLensesItem.sectionTitle} />
                 ))}
             </StyledHorozontal>
         </StyledContainer>

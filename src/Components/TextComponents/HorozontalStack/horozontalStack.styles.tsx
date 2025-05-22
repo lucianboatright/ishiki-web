@@ -33,13 +33,24 @@ interface InfoBarColorProps {
 }
 
 export const SquareLogo = styled.div<InfoBarColorProps>((props) => ({
-    width: '175px',
-    height: '75px',
+    width: '125px',
+    height: '282px',
     fontSize: '25px',
     color: 'white',
-    textAlign: 'center',
+    // textAlign: 'center',
     fontWeight: '100',
-    alignContent: 'center',
+    // alignContent: 'center',
     background: `linear-gradient(95deg,${props.FirstColor}, ${props.SecondColor})`,
-
 }));
+
+
+export const StyledColorSection = styled('div')({
+  display: 'flex',
+});
+
+export const StyledDiv = styled('div')({
+fontSize: '2rem',
+textOrientation: 'upright',
+writingMode: 'vertical-rl'
+});
+
