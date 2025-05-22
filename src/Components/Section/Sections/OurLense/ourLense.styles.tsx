@@ -12,7 +12,7 @@ export const StyledHorozontal = styled('div')({
   gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
 
   '@media (max-width: 768px)': {
-    gridTemplateColumns: '1fr',
+    gridTemplateColumns: '1fr 1fr',
   },
 });
 

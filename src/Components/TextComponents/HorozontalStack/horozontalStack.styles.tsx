@@ -53,6 +53,6 @@ export const StyledDiv = styled('div')({
 fontSize: '2rem',
 textOrientation: 'upright',
 writingMode: 'vertical-rl',
-color: 'black'
+color: 'white'
 });
 
