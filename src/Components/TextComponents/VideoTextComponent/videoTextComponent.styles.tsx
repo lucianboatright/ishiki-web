@@ -43,14 +43,14 @@ export const CreditsTitle = styled('h3')({
   marginBottom: '1.5rem',
 });
 
-export const CreditsGrid = styled('div')({
+export const CreditsGrid = styled.div({
   display: 'grid',
   maxWidth: '70rem',
   gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '1.5rem',
 });
 
-export const CreditItem = styled('div')({
+export const CreditItem = styled.div({
   display: 'flex',
   flexDirection: 'column',
   marginBottom: '0.8rem',
@@ -75,7 +75,7 @@ export const StyledVideo = styled('iframe')({
   border: 'none',
 });
 
-export const VideoWrapper = styled('div')({
+export const VideoWrapper = styled.div({
   position: 'relative',
   paddingTop: '56.25%', 
   height: '0',

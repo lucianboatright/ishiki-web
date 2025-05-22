@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const StyledContainer = styled('div')({
+export const StyledContainer = styled.div({
     marginTop: '3rem',
     display: 'grid',
     gridTemplateColumns: 'auto auto',
@@ -15,7 +15,7 @@ export const StyledContainer = styled('div')({
     },
   });
   
-  export const StyledImage = styled('div')({
+  export const StyledImage = styled.div({
     backgroundColor: 'grey',
     width: '10rem',
     height: '5rem',
@@ -29,7 +29,7 @@ export const StyledContainer = styled('div')({
     },
   });
   
-  export const StyledTextBody = styled('p')({
+  export const StyledTextBody = styled.p({
     fontWeight: 100,
     fontSize: '1.5rem',
   
@@ -39,8 +39,8 @@ export const StyledContainer = styled('div')({
   });
     
 interface InfoBarColorProps {
-    FirstColor?: string;
-    SecondColor?: string; 
+    firstcolor?: string;
+    secondcolor?: string; 
 }
 
 
@@ -55,7 +55,7 @@ export const CircleLogo = styled.div<InfoBarColorProps>((props) => ({
     alignContent: 'center',
     // marginTop: 'auto',
     // marginBottom: 'auto',
-    background: `linear-gradient(95deg,${props.FirstColor}, ${props.SecondColor})`,
+    background: `linear-gradient(95deg,${props.firstcolor}, ${props.secondcolor})`,
 
 }));
     

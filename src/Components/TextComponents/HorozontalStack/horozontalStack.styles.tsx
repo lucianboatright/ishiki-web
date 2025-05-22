@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 
 
-export const StyledContainer = styled("div")`
-    margin-left: auto;
-    margin-right: auto;
-`;
+export const StyledContainer = styled.div({
+
+    marginLeft: 'auto',
+    marginRight: 'auto',
+});
+
     
 
-export const StyledImage = styled("div")`
-    background-color: grey;
-    width: 10rem;
-    height: 5rem;
-    margin-right: 4rem;
-`;
+export const StyledImage = styled.div({
+
+    backgroundColor: 'grey',
+    width: '10rem',
+    height: '5rem',
+    marginRight: '4rem',
+});
     
 
 export const StyledTextBody = styled("h3")`
@@ -28,8 +31,8 @@ export const StyledSvg = styled("img")`
 `;
     
 interface InfoBarColorProps {
-    FirstColor?: string;
-    SecondColor?: string; 
+    firstcolor?: string;
+    secondcolor?: string; 
 }
 
 export const SquareLogo = styled.div<InfoBarColorProps>((props) => ({
@@ -40,15 +43,15 @@ export const SquareLogo = styled.div<InfoBarColorProps>((props) => ({
     // textAlign: 'center',
     fontWeight: '100',
     // alignContent: 'center',
-    background: `linear-gradient(95deg,${props.FirstColor}, ${props.SecondColor})`,
+    background: `linear-gradient(95deg,${props.firstcolor}, ${props.secondcolor})`,
 }));
 
 
-export const StyledColorSection = styled('div')({
+export const StyledColorSection = styled.div({
   display: 'flex',
 });
 
-export const StyledDiv = styled('div')({
+export const StyledDiv = styled.div({
     marginTop: '1rem',
 fontSize: '2rem',
 textOrientation: 'upright',

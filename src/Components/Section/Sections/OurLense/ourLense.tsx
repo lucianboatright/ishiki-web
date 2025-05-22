@@ -19,7 +19,7 @@ const OurLenses: React.FC<OurLensesComponentProps> = ({ title = 'sdfasdfasdfasdf
             <StyledHorozontal>
 
                 {ourLensesItems.map((ourLensesItem) => (
-                        <HorozontalStackComponent textBody={ourLensesItem.text} img={ourLensesItem.img} colorTop={ourLensesItem.colorTop} colorBottom={ourLensesItem.colorBottom} sectionTitle={ourLensesItem.sectionTitle} />
+                        <HorozontalStackComponent textBody={ourLensesItem.text} img={ourLensesItem.img} colorTop={ourLensesItem.colorTop} colorBottom={ourLensesItem.colorBottom} sectionTitle={ourLensesItem.sectionTitle}  />
                 ))}
             </StyledHorozontal>
         </StyledContainer>

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const DropDownContainer = styled('div')({
+export const DropDownContainer = styled.div({
   width: '10.5em',
   marginLeft: '2rem',
 });
 
-export const DropDownHeader = styled('div')({
+export const DropDownHeader = styled.div({
   padding: '0.75rem 1.5rem',
   marginRight: '4rem',
   background: 'linear-gradient(to right, white 50%, black 50%)',
@@ -28,12 +28,12 @@ export const DropDownHeader = styled('div')({
   },
 });
 
-export const DropDownListContainer = styled('div')({
+export const DropDownListContainer = styled.div({
   position: 'absolute',
   zIndex: 100,
 });
 
-export const DropDownList = styled('div')({
+export const DropDownList = styled.div({
   display: 'none',
   padding: 0,
   margin: 0,
@@ -51,10 +51,10 @@ export const DropDownList = styled('div')({
   },
 });
 
-export const ListItem = styled('div')({
+export const ListItem = styled.div({
   listStyle: 'none',
-  marginBottom: '1.5rem',
-  marginTop: '1.5rem',
+  // marginBottom: '1.5rem',
+  // marginTop: '1.5rem',
   paddingLeft: '0.75rem',
   paddingRight: '0.75rem',
   height: '2.2rem',

@@ -128,11 +128,11 @@ const App: React.FC = () => {
       <Header />
       <main>
         <VideoSection section={'logo'} />
-        <ReactPlayer
+        {/* <ReactPlayer
   url="https://vimeo.com/843867279"
   controls
   width="100%"
-/>
+/> */}
         <OurMission />
         <About />
         <OurValues title='Our Values' ourValueItems={ourValuesData}/>

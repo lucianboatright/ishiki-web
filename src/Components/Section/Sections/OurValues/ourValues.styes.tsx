@@ -10,10 +10,10 @@ export const StyledTitle = styled('h3')({
     maxWidth: '80rem',
   });
   
-  export const StyledContainer = styled('div')({
+  export const StyledContainer = styled.div({
     marginTop: '0rem',
   });
   
-  export const StyledContent = styled('div')({
+  export const StyledContent = styled.div({
     marginTop: '0rem',
   });

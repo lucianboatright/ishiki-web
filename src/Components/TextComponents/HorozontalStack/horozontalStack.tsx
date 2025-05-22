@@ -15,7 +15,7 @@ const HorozontalStackComponent: React.FC<HorozontalStackComponentProps> = ({ img
     <>
     <StyledContainer>
       <StyledColorSection>
-        <SquareLogo FirstColor={colorTop} SecondColor={colorBottom}>
+        <SquareLogo firstcolor={colorTop} secondcolor={colorBottom}>
 
         <StyledDiv>{sectionTitle}</StyledDiv>
         </SquareLogo>

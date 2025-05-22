@@ -1,77 +1,78 @@
 import React, { useState } from 'react';
+import { DropDownContainer, DropDownHeader, DropDownList, ListItem } from './dropdown.styles';
 
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
-export const DropDownContainer = styled("div")`
-  width: 10.5em;
-  margin-left: 2rem;
-`;
+// export const DropDownContainer = styled("div")`
+//   width: 10.5em;
+//   margin-left: 2rem;
+// `;
 
-export const DropDownHeader = styled("div")`
-  padding: 0.75rem 1.5rem;
-  margin-right: 4rem;
-  background: linear-gradient(to right, white 50%, black 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  color: white;
-  cursor: pointer;
-  transition: background-position 0.4s ease, color 0.4s ease;
+// export const DropDownHeader = styled("div")`
+//   padding: 0.75rem 1.5rem;
+//   margin-right: 4rem;
+//   background: linear-gradient(to right, white 50%, black 50%);
+//   background-size: 200% 100%;
+//   background-position: right bottom;
+//   color: white;
+//   cursor: pointer;
+//   transition: background-position 0.4s ease, color 0.4s ease;
 
-  font-size: 1.4rem;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 100;
+//   font-size: 1.4rem;
+//   font-family: Helvetica, Arial, sans-serif;
+//   font-weight: 100;
 
-  width: 9rem;
+//   width: 9rem;
 
-  ${DropDownContainer}:hover & {
-    background-position: left bottom;
-    color: black;
-  }
-`;
+//   ${DropDownContainer}:hover & {
+//     background-position: left bottom;
+//     color: black;
+//   }
+// `;
 
-export const DropDownListContainer = styled("div")`
-  position: absolute;
-  z-index: 100;
-`;
+// export const DropDownListContainer = styled("div")`
+//   position: absolute;
+//   z-index: 100;
+// `;
 
-export const DropDownList = styled("div")`
-  display: none; 
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 500;
+// export const DropDownList = styled("div")`
+//   display: none; 
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+//   color: white;
+//   font-size: 1.3rem;
+//   font-weight: 500;
 
-  &:first-child {
-    padding-top: 0.8em;
-  }
+//   &:first-child {
+//     padding-top: 0.8em;
+//   }
 
-  ${DropDownContainer}:hover & {
-    display: block;
-  }
-`;
+//   ${DropDownContainer}:hover & {
+//     display: block;
+//   }
+// `;
 
-export const ListItem = styled("div")`
-  list-style: none;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  height: 2.2rem;
-  background-color: white;
-  color: black;
-  align-content: center;
-    width: 10.5rem;
+// export const ListItem = styled("div")`
+//   list-style: none;
+//   margin-bottom: 0.5rem;
+//   margin-top: 0.5rem;
+//   padding-left: 0.75rem;
+//   padding-right: 0.75rem;
+//   height: 2.2rem;
+//   background-color: white;
+//   color: black;
+//   align-content: center;
+//     width: 10.5rem;
 
-    font-size: 1rem;
+//     font-size: 1rem;
     
-    &:hover {
-      background-color: black;
-      cursor: pointer;
-    color: white;
-  }
-`;
+//     &:hover {
+//       background-color: black;
+//       // cursor: pointer;
+//     color: white;
+//   }
+// `;
 
 
 function formatString(input: string): string {

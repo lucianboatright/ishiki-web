@@ -19,7 +19,7 @@ const VerticalStackomponent: React.FC<VerticalStackomponentProps> = ({ img, text
         </StyledImage>
       }
       {letter && 
-        <CircleLogo FirstColor={colorLeft} SecondColor={colorRight}>{letter}</CircleLogo>
+        <CircleLogo firstcolor={colorLeft} secondcolor={colorRight}>{letter}</CircleLogo>
       }
         <StyledTextBody>
             {textBody}

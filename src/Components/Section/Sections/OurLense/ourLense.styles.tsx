@@ -7,7 +7,7 @@ export const StyledTitle = styled('h3')({
   fontWeight: 100,
 });
 
-export const StyledHorozontal = styled('div')({
+export const StyledHorozontal = styled.div({
   display: 'grid',
   gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
 
@@ -16,7 +16,7 @@ export const StyledHorozontal = styled('div')({
   },
 });
 
-export const StyledContainer = styled('div')({
+export const StyledContainer = styled.div({
   marginTop: '15rem',
   marginBottom: '10rem',
 });

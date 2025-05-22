@@ -28,13 +28,13 @@ export const Button = styled.button({
   },
 });
 
-export const ButtonContainer = styled('div')({
+export const ButtonContainer = styled.div({
   position: 'fixed',
   bottom: '2rem',
   right: '2rem',
   zIndex: 1000,
 });
 
-export const StyledText = styled('div')({
+export const StyledText = styled.div({
   marginTop: '2rem',
 });
