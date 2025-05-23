@@ -4,6 +4,8 @@ export const StyledTitle = styled('h3')({
     textAlign: 'center',
     fontSize: '4rem',
     fontWeight: 100,
+        fontFamily: 'Helvetica, Arial, sans-serif',
+
   });
   
   export const StyledTextBody = styled('h3')({

@@ -5,7 +5,7 @@ import TeamCard from '../../../TextComponents/TeamCard/teamCard';
 
 import ElenaImage from '../../../../assets/CoreTeam/Elena_omura.png'
 import MithilaImage from '../../../../assets/CoreTeam/Mithila_joshi.png'
-import EminImage from '../../../../assets/CoreTeam/Emin_akyar.png'
+import EminImage from '../../../../assets/CoreTeam/EminPic.jpg'
 
 
 const team = [

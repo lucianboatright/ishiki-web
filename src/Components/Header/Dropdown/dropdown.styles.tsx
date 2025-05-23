@@ -55,15 +55,19 @@ export const ListItem = styled.div({
   listStyle: 'none',
   // marginBottom: '1.5rem',
   // marginTop: '1.5rem',
-  paddingLeft: '0.75rem',
-  paddingRight: '0.75rem',
+      fontFamily: 'Helvetica, Arial, sans-serif',
+
+  paddingLeft: '.75rem',
+  paddingRight: '.75rem',
+  paddingTop: '.25rem',
+  paddingBottom: '.25rem',
   height: '2.2rem',
   backgroundColor: 'white',
   color: 'black',
   alignContent: 'center',
   width: '10.5rem',
 
-  fontSize: '1rem',
+  fontSize: '1.2rem',
   cursor: 'pointer',
 
   '&:hover': {

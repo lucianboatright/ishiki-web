@@ -10,7 +10,6 @@ const Contact: React.FC<ContactProps> = () => {
   return (
     <Section id='contact' title='Get in touch'>
         <StyledContainer>
-            <StyledImage>image</StyledImage>
             <DetailsContainer>
                 <StyledEmail>Email</StyledEmail>
                 <StyledDetails>conatct info</StyledDetails>

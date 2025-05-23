@@ -21,13 +21,15 @@ export const SectionWrapper = styled('section')({
 
 export const Title = styled('h2')({
   fontSize: '2.5rem',
-  fontWeight: 400,
+  fontWeight: 100,
   marginBottom: '1rem',
+    fontFamily: 'Helvetica, Arial, sans-serif',
 });
 
 export const Paragraph = styled('p')({
   marginBottom: '1rem',
   width: '50%',
+  fontSize: '1.5rem',
   lineHeight: 1.6,
   fontWeight: 100,
   
@@ -41,6 +43,7 @@ export const CreditsTitle = styled('h3')({
   fontSize: '2.1em',
   marginTop: '3rem',
   marginBottom: '1.5rem',
+    fontFamily: 'Helvetica, Arial, sans-serif',
 });
 
 export const CreditsGrid = styled.div({

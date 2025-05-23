@@ -1,27 +1,30 @@
 import styled from 'styled-components'
 
 
-export const StyledContainer = styled.div`
-  margin-left: 50px;
-  display: flex;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
-  @media (max-width: 768px) {
-    margin-left: 1rem;
-  }
-`;
 
-export const StyledImage = styled.div`
-background-color: white;
-border-radius: 50%;
-    margin-right: 4rem;
-`;
+export const StyledContainer = styled.div({
+  marginLeft: '50px',
+  display: 'flex',
+  marginTop: '4rem',
+  marginBottom: '5rem',
 
-export const DetailsContainer = styled.div`
-`;
+  '@media (max-width: 768px)': {
+    marginLeft: '1rem',
+  },
+});
 
-export const StyledEmail = styled.div`
-`;
+export const StyledImage = styled.div({
+  backgroundColor: 'white',
+  borderRadius: '50%',
+  marginRight: '4rem',
+});
 
-export const StyledDetails = styled.div`
-`;
+export const DetailsContainer = styled.div({});
+
+export const StyledEmail = styled.div({
+  fontSize: '2.5rem'
+});
+
+export const StyledDetails = styled.div({
+  fontSize: '2rem'
+});

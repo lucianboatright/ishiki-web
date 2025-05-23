@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.section`
-  scroll-margin-top: 100px;
-  margin-top: 8rem;
-`;
+export const Wrapper = styled.section({
+  scrollMarginTop: '100px',
+  marginTop: '8rem',
+});
 
-export const Title = styled.h2`
-  font-size: 3rem;
-  margin-bottom: 1rem;
-   margin-left: 50px;
-   font-weight: 100;
-     @media (max-width: 768px) {
-    margin-left: 1rem;
-  }
-`;
+export const Title = styled.h2({
+  fontSize: '3rem',
+  marginBottom: '1rem',
+  marginLeft: '50px',
+  fontWeight: 100,
+    fontFamily: 'Helvetica, Arial, sans-serif',
+
+  '@media (max-width: 768px)': {
+    marginLeft: '1rem',
+  },
+});

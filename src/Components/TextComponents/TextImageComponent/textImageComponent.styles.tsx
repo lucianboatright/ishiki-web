@@ -15,49 +15,52 @@ export const SectionWrapper = styled.section({
 });
 
 export const ContentWrapper = styled.div({
-  width: '90%',
+  // width: '90%',
   display: 'flex',
   flexWrap: 'wrap',
-  gap: '10%',
+  gap: '5%',
 
-  '@media (max-width: 768px)': {
+  '@media (max-width: 1350px)': {
     display: 'block',
   },
 });
 
 export const TextColumn = styled.div({
   flex: 1,
-  maxWidth: '800px',
+  // maxWidth: '800px',
 });
 
-export const ImageColumn = styled.div({
+export const ImageColumn = styled.img({
   flex: 1,
   maxWidth: '800px',
-  background: '#eaeaea',
+  // background: '#eaeaea',
   position: 'relative',
-  aspectRatio: '4 / 3',
+  // aspectRatio: '4 / 3',
 
-  '&::before, &::after': {
-    content: "''",
-    position: 'absolute',
-    background: '#999',
-  },
+  // '&::before, &::after': {
+  //   content: "''",
+  //   position: 'absolute',
+  //   background: '#999',
+  // },
 
-  '&::before': {
-    width: '100%',
-    height: '1px',
-    top: '50%',
-    left: 0,
-    transform: 'rotate(45deg)',
-  },
+  // '&::before': {
+  //   width: '100%',
+  //   height: '1px',
+  //   top: '50%',
+  //   left: 0,
+  //   transform: 'rotate(45deg)',
+  // },
 
-  '&::after': {
-    width: '100%',
-    height: '1px',
-    top: '50%',
-    left: 0,
-    transform: 'rotate(-45deg)',
-  },
+  // '&::after': {
+  //   width: '100%',
+  //   height: '1px',
+  //   top: '50%',
+  //   left: 0,
+  //   transform: 'rotate(-45deg)',
+  // },
+  'img': {
+    height: '40rem',
+  }
 });
 
 export const Title = styled.h1({

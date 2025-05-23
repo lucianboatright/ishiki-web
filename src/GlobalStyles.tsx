@@ -15,7 +15,12 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: italic;
   }
-
+  @font-face {
+    font-family: 'Newsreader';
+    src: url('Fonts/Newsreader/static/Newsreader_60pt-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+    }
 
   body {
     margin: 0;

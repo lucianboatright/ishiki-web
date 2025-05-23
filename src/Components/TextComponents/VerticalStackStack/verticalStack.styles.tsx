@@ -5,8 +5,8 @@ export const StyledContainer = styled.div({
     marginTop: '3rem',
     display: 'grid',
     gridTemplateColumns: 'auto auto',
-    gap: '8rem',
-    width: '40rem',
+    gap: '4rem',
+    width: '45rem',
     marginRight: 'auto',
     marginLeft: 'auto',
   
@@ -29,10 +29,13 @@ export const StyledContainer = styled.div({
     },
   });
   
-  export const StyledTextBody = styled.p({
-    fontWeight: 100,
-    fontSize: '1.5rem',
-  
+  export const StyledTextBody = styled.span({
+  fontSize: '2rem',
+  alignContent: 'center',
+  fontFamily: 'Newsreader, serif',
+  fontWeight: 200,
+  lineHeight: '1.2',
+
     '@media (max-width: 768px)': {
       textAlign: 'center',
     },
@@ -45,12 +48,13 @@ interface InfoBarColorProps {
 
 
 export const CircleLogo = styled.div<InfoBarColorProps>((props) => ({
-    width: '75px',
-    height: '75px',
+    width: '100px',
+    height: '100px',
     borderRadius: '50%',
-    fontSize: '25px',
+    fontSize: '50px',
     color: 'white',
     textAlign: 'center',
+       fontFamily: 'Helvetica, Arial, sans-serif',
     fontWeight: '100',
     alignContent: 'center',
     // marginTop: 'auto',

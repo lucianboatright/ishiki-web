@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionWrapper, ContentWrapper, TextColumn, Title, SubTitle, Paragraph, ImageColumn } from './textImageComponent.styles';
-
+import RingSvg from '../../../assets/logo/ringstack.svg'
 interface TextComponentProps {
     title?: string;
     subTitle?: string;
@@ -19,7 +19,9 @@ const TextComponent: React.FC<TextComponentProps> = ({ title, subTitle, textBody
                 <div dangerouslySetInnerHTML={{ __html: textBody || 'string'}}></div>
               </Paragraph>
               </TextColumn>
-              <ImageColumn />
+              <ImageColumn src={RingSvg} alt='ring' />
+                  {/* <img src={RingSvg} alt='ring' />
+              </ImageColumn> */}
           </ContentWrapper>
         </SectionWrapper>
   );
