@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '../../Section/section';
 import { SectionWrapper, Title, Paragraph, CreditsTitle, CreditsGrid, CreditItem, CreditRole, CreditName, VideoWrapper } from './videoTextComponent.styles';
-import ReactPlayer from 'react-player/vimeo';
 
 interface Credit {
     role: string;
@@ -54,7 +53,7 @@ const VideoTextComponent: React.FC<VideoTextComponentProps> = ({
                     
                   />
               </div> */}
-
+{/* 
   <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
     <iframe
       src="https://player.vimeo.com/video/843867279?share=copy"
@@ -71,7 +70,7 @@ const VideoTextComponent: React.FC<VideoTextComponentProps> = ({
       allow="autoplay; fullscreen; picture-in-picture"
       allowFullScreen
     />
-  </div>
+  </div> */}
   {/* <div style={{padding:'56.25% 0 0 0',position:'relative'}}>
     <iframe 
       src='https://player.vimeo.com/video/843867279?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' 

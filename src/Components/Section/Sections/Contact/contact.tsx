@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../../section';
-import { DetailsContainer, StyledContainer, StyledDetails, StyledEmail, StyledImage } from './contact.styles';
+import { DetailsContainer, StyledContainer, StyledDetails, StyledEmail } from './contact.styles';
 
 interface ContactProps {
 
