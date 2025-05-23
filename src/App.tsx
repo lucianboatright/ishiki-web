@@ -12,7 +12,7 @@ import Footer from './Components/Footer/footer';
 import BackToTopButton from './Components/BackButton/backButton';
 import VideoSection from './Components/Section/Sections/VideoSection/videoSection';
 import GlobalStyles from './GlobalStyles';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
   const ourValuesData = [
     {
