@@ -35,7 +35,7 @@ export const Illustration = styled('img')({
 
 export const ButtonsRow = styled('div')({
   display: 'flex',
-  gap: '2rem',
+  gap: '8rem',
   margin: '3rem 0',
   flexWrap: 'wrap',
   justifyContent: 'center',
@@ -48,11 +48,12 @@ export const ServiceButton = styled('div')<{ gradient: string }>(({ gradient }) 
   background: gradient,
   backgroundSize: '200% 100%',
   border: 'none',
-  borderRadius: '3rem',
+  borderRadius: '.3rem',
   color: 'white',
   fontSize: '1rem',
   cursor: 'pointer',
   transition: 'background-position 0.5s ease',
+    textAlign: 'center',
 
   '&:hover': {
     backgroundPosition: 'right center',
