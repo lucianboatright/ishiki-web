@@ -4,13 +4,13 @@ export const SectionWrapper = styled.section({
   background: '#0a0a0a',
   color: 'white',
   padding: '4rem 2rem',
-  display: 'flex',
+  // display: 'flex',
   justifyContent: 'center',
   fontFamily: "'Helvetica', sans-serif",
   backgroundColor: 'black',
 
   '@media (max-width: 768px)': {
-    padding: 0,
+    padding: '1rem',
   },
 });
 
@@ -58,8 +58,11 @@ export const ImageColumn = styled.img({
   //   left: 0,
   //   transform: 'rotate(-45deg)',
   // },
+  width: '100%',
+height: 'auto',
+display: 'block',
   'img': {
-    height: '40rem',
+
   }
 });
 

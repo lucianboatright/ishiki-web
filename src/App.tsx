@@ -12,7 +12,7 @@ import Footer from './Components/Footer/footer';
 import BackToTopButton from './Components/BackButton/backButton';
 import VideoSection from './Components/Section/Sections/VideoSection/videoSection';
 import GlobalStyles from './GlobalStyles';
-// import ReactPlayer from 'react-player';
+import ServicesSection from './Components/Section/Sections/ServicesSection/servicesPage';
 
   const ourValuesData = [
     {
@@ -132,6 +132,7 @@ const App: React.FC = () => {
         <About />
         <OurValues title='Our Values' ourValueItems={ourValuesData}/>
         <OurLenses title='Our Lenses' ourLensesItems={ourLensesData} />
+        <ServicesSection />
         <VideoTextComponent   
           sectionTitle='Work'
           section='everyDropCounts'   

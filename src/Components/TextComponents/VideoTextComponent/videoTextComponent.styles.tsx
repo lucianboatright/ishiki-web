@@ -51,6 +51,10 @@ export const CreditsGrid = styled.div({
   maxWidth: '70rem',
   gridTemplateColumns: 'repeat(3, 1fr)',
   gap: '1.5rem',
+  [`@media (max-width: 768px)`]: {
+    gridTemplateColumns: 'repeat(2, 1fr)',
+  
+  },
 });
 
 export const CreditItem = styled.div({
@@ -62,6 +66,9 @@ export const CreditItem = styled.div({
 export const CreditRole = styled('span')({
   fontSize: '1.5em',
   marginBottom: '0.8rem',
+  [`@media (max-width: 768px)`]: {
+      fontSize: '1.2em',
+  },
 });
 
 export const CreditName = styled('span')({
@@ -83,5 +90,5 @@ export const VideoWrapper = styled.div({
   paddingTop: '56.25%', 
   height: '0',
   width: '80rem',
-  overflow: 'hidden',
+  // overflow: 'hidden',
 });

@@ -9,8 +9,9 @@ export const StyledContainer = styled.div({
     width: '45rem',
     marginRight: 'auto',
     marginLeft: 'auto',
-  
+    
     '@media (max-width: 768px)': {
+      width: '20rem',
       paddingLeft: '2rem',
     },
   });
@@ -37,7 +38,7 @@ export const StyledContainer = styled.div({
   lineHeight: '1.2',
 
     '@media (max-width: 768px)': {
-      textAlign: 'center',
+      textAlign: 'left',
     },
   });
     

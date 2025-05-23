@@ -20,11 +20,13 @@ export const Grid = styled.div(({ theme }) => ({
   display: 'grid',
   gap: '3rem',
   gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-  // maxWidth: '60rem',
 
   [`@media (max-width: 768px)`]: {
-    gridTemplateColumns: 'repeat(2, 1fr)',
+    gridTemplateColumns: 'repeat(1fr)',
     marginLeft: '1rem',
+    marginTop: '1rem',
+    display: 'grid',
+    gap: '1rem',
   },
 }));
 

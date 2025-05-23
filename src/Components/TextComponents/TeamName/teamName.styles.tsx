@@ -22,11 +22,17 @@ export const Name = styled.p({
   fontSize: '1.5rem',
   color: 'white',
   fontWeight: 100,
-});
-
-export const Role = styled.p({
-  margin: 0,
-  fontSize: '1.3rem',
-  color: '#ccc',
-    fontStyle: 'italic'
+    [`@media (max-width: 768px)`]: {
+      fontSize: '1.2rem',
+    },
+  });
+  
+  export const Role = styled.p({
+    margin: 0,
+    fontSize: '1.3rem',
+    color: '#ccc',
+    fontStyle: 'italic',
+    [`@media (max-width: 768px)`]: {
+      fontSize: '1rem',
+  },
 });

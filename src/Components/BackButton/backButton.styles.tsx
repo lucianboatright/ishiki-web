@@ -33,6 +33,9 @@ export const ButtonContainer = styled.div({
   bottom: '2rem',
   right: '2rem',
   zIndex: 1000,
+      '@media (max-width: 1300px)': {
+        display: 'none',
+    },
 });
 
 export const StyledText = styled.div({

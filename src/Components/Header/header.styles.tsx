@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const HeaderWrapper = styled.header({
   position: 'fixed',
   top: '0',
@@ -11,6 +12,9 @@ export const HeaderWrapper = styled.header({
   height: '2rem',
   width: '100%',
   zIndex: '1',
+  '@media (max-width: 1200px)': {
+    width: 'auto',
+  },
 });
 
 export const Logo = styled.div({
@@ -23,7 +27,7 @@ export const MenueWrapper = styled.nav({
   display: 'flex',
   gap: '2rem',
 
-  '@media (max-width: 768px)': {
+  '@media (max-width: 1200px)': {
     display: 'none',
   },
 });
@@ -41,7 +45,7 @@ export const Burger = styled.div({
     borderRadius: '2px',
   },
 
-  '@media (max-width: 768px)': {
+  '@media (max-width: 1200px)': {
     display: 'flex',
   },
 });
@@ -58,7 +62,7 @@ export const MobileMenu = styled.div({
   padding: '1rem 2rem',
   zIndex: 999,
 
-  '@media (min-width: 769px)': {
+  '@media (min-width: 1200px)': {
     display: 'none',
   },
 });
@@ -78,20 +82,25 @@ export const StyledList = styled.div({
 });
 
 export const HeaderListItem = styled.div({
-  padding: '0.75rem 1.5rem',
+  listStyle: 'none',
+  padding: '0.25rem .75rem',
   marginRight: '4rem',
   background: 'linear-gradient(to right, white 50%, black 50%)',
   backgroundSize: '200% 100%',
   backgroundPosition: 'right bottom',
-  transition: 'background-position 0.5s ease, color 0.5s ease',
+  color: 'white',
   cursor: 'pointer',
+  transition: 'background-position 0.4s ease, color 0.4s ease',
+
   fontSize: '1.4rem',
-  width: '9rem',
+  width: '6rem',
   fontFamily: 'Helvetica, Arial, sans-serif',
   fontWeight: 100,
 
   '&:hover': {
-    backgroundPosition: 'left bottom',
+    backgroundColor: 'white',
+        backgroundPosition: 'left bottom',
+
     color: 'black',
   },
 });

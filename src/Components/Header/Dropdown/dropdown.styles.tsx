@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const DropDownContainer = styled.div({
-  width: '10.5em',
-  marginLeft: '2rem',
+  width: '8em',
+  // marginLeft: '2rem',
 });
 
 export const DropDownHeader = styled.div({
-  padding: '0.75rem 1.5rem',
-  marginRight: '4rem',
+  padding: '0.25rem .75rem',
+  marginRight: '2rem',
   background: 'linear-gradient(to right, white 50%, black 50%)',
   backgroundSize: '200% 100%',
   backgroundPosition: 'right bottom',
@@ -16,7 +16,7 @@ export const DropDownHeader = styled.div({
   transition: 'background-position 0.4s ease, color 0.4s ease',
 
   fontSize: '1.5rem',
-  width: '9rem',
+  // width: '6rem',
   fontFamily: 'Helvetica, Arial, sans-serif',
   fontWeight: 100,
 
@@ -65,7 +65,7 @@ export const ListItem = styled.div({
   backgroundColor: 'white',
   color: 'black',
   alignContent: 'center',
-  width: '10.5rem',
+  width: '9.5rem',
 
   fontSize: '1.2rem',
   cursor: 'pointer',
