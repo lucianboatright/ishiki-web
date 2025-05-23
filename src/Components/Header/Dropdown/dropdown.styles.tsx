@@ -19,6 +19,7 @@ export const DropDownHeader = styled.div({
   // width: '6rem',
   fontFamily: 'Helvetica, Arial, sans-serif',
   fontWeight: 100,
+  width: '8rem',
 
 
   // Hover effect using parent component reference
@@ -65,7 +66,7 @@ export const ListItem = styled.div({
   backgroundColor: 'white',
   color: 'black',
   alignContent: 'center',
-  width: '9.5rem',
+  width: '8rem',
 
   fontSize: '1.2rem',
   cursor: 'pointer',
