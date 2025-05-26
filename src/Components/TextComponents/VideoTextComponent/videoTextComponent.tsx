@@ -36,7 +36,7 @@ const VideoTextComponent: React.FC<VideoTextComponentProps> = ({
 }) => {
   return (
     <Section id={section} title={sectionTitle}>
-        <VideoWrapper>
+        {/* <VideoWrapper> */}
             {/* <ReactPlayer   
               url="https://vimeo.com/843867279"
               controls
@@ -86,7 +86,7 @@ const VideoTextComponent: React.FC<VideoTextComponentProps> = ({
             allowFullScreen
             title="Embedded Vimeo Video" 
           /> */}
-        </VideoWrapper>
+        {/* </VideoWrapper> */}
         <SectionWrapper>
         <Title>{title}</Title>
         {paragraphs.map((text, index) => (

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const StyledContainer = styled('h3')({
   marginTop: '10rem',
   marginBottom: '10rem',
+  marginRight: '50px',
 });
 
 export const SectionWrapper = styled('section')({
@@ -28,7 +29,7 @@ export const Title = styled('h2')({
 
 export const Paragraph = styled('p')({
   marginBottom: '1rem',
-  width: '50%',
+  maxWidth: '80rem',
   fontSize: '1.5rem',
   lineHeight: 1.6,
   fontWeight: 100,

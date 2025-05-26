@@ -5,7 +5,7 @@ import HorozontalStackomponent from '../../../TextComponents/VerticalStackStack/
 
 interface OurValuesComponentProps {
     title?: string;
-    ourValueItems: { img: any, text: string, letter: string, colorLeft: string, colorRight: string }[]
+    ourValueItems: { img: any, text: string, letter: string, colorLeft: string, colorRight: string, word: string, }[]
 }
 
 const OurValues: React.FC<OurValuesComponentProps> = ({ title, ourValueItems }) => {
@@ -17,7 +17,7 @@ const OurValues: React.FC<OurValuesComponentProps> = ({ title, ourValueItems }) 
             </StyledTitle>
             <StyledContent>
               {ourValueItems.map((ourValueItems) => (
-                      <HorozontalStackomponent textBody={ourValueItems.text} img={ourValueItems.img} letter={ourValueItems.letter} colorRight={ourValueItems.colorRight} colorLeft={ourValueItems.colorLeft} />
+                      <HorozontalStackomponent word={ourValueItems.word} textBody={ourValueItems.text} img={ourValueItems.img} letter={ourValueItems.letter} colorRight={ourValueItems.colorRight} colorLeft={ourValueItems.colorLeft} />
               ))}
             </StyledContent>
         </StyledContainer>

@@ -31,11 +31,11 @@ const services = [
 const ServicesSection: React.FC = () => {
   return (
     <Section id="services">
-    <Services
-      title="Amplifying the impact of value-aligned clients & initiatives, with sincere storytelling & strategic distribution."
-      image={RingSvg}
-      services={services}
-    />    
+      <Services
+        title="Amplifying the impact of value-aligned clients & initiatives, with sincere storytelling & strategic distribution."
+        image={RingSvg}
+        services={services}
+      />    
     </Section>
   );
 };

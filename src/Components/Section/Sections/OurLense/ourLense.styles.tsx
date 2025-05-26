@@ -15,7 +15,7 @@ export const StyledHorozontal = styled.div({
   marginRight: '8%',
   marginLeft: '8%',
 
-  '@media (max-width: 768px)': {
+  '@media (max-width: 1300px)': {
     gridTemplateColumns: '1fr 1fr',
   },
 });

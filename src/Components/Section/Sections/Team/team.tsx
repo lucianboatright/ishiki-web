@@ -4,7 +4,7 @@ import { Grid } from './team.styles';
 import TeamCard from '../../../TextComponents/TeamCard/teamCard';
 
 import ElenaImage from '../../../../assets/CoreTeam/Elena_omura.png'
-import MithilaImage from '../../../../assets/CoreTeam/Mithila_joshi.png'
+import MithilaImage from '../../../../assets/CoreTeam/matila-second.jpg'
 import EminImage from '../../../../assets/CoreTeam/EminPic.jpg'
 
 

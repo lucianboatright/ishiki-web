@@ -22,16 +22,19 @@ export const Name = styled.p({
   fontSize: '1.5rem',
   color: 'white',
   fontWeight: 100,
-    [`@media (max-width: 768px)`]: {
-      fontSize: '1.2rem',
-    },
-  });
+  fontFamily: 'Helvetica, Arial, sans-serif',
   
-  export const Role = styled.p({
+  [`@media (max-width: 768px)`]: {
+    fontSize: '1.2rem',
+  },
+});
+
+export const Role = styled.p({
+    fontWeight: 100,
     margin: 0,
     fontSize: '1.3rem',
     color: '#ccc',
-    fontStyle: 'italic',
+    // fontStyle: 'light',
     [`@media (max-width: 768px)`]: {
       fontSize: '1rem',
   },

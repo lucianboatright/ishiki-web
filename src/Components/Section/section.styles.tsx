@@ -9,6 +9,7 @@ export const Title = styled.h2({
   fontSize: '3rem',
   marginBottom: '1rem',
   marginLeft: '50px',
+  marginRight: '50px',
   fontWeight: 100,
     fontFamily: 'Helvetica, Arial, sans-serif',
 

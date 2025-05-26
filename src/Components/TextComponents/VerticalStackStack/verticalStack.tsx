@@ -1,5 +1,5 @@
 import React from 'react';
-import { CircleLogo, StyledContainer, StyledImage, StyledTextBody } from './verticalStack.styles';
+import { CircleLogo, StyledContainer, StyledImage, StyledTextBody, StyledWord } from './verticalStack.styles';
 
 interface VerticalStackomponentProps {
     img: any;
@@ -7,9 +7,10 @@ interface VerticalStackomponentProps {
     textBody?: string;
     colorRight: string;
     colorLeft: string;
+    word: string;
 }
 
-const VerticalStackomponent: React.FC<VerticalStackomponentProps> = ({ img, textBody, letter, colorLeft, colorRight }) => {
+const VerticalStackomponent: React.FC<VerticalStackomponentProps> = ({ img, textBody, letter, colorLeft, colorRight, word }) => {
   return (
     <>
     <StyledContainer>
@@ -19,7 +20,11 @@ const VerticalStackomponent: React.FC<VerticalStackomponentProps> = ({ img, text
         </StyledImage>
       }
       {letter && 
-        <CircleLogo firstcolor={colorLeft} secondcolor={colorRight}>{letter}</CircleLogo>
+      <>
+      
+      <CircleLogo firstcolor={colorLeft} secondcolor={colorRight}>{letter}</CircleLogo>
+    <StyledWord>{word}</StyledWord>
+      </>
       }
         <StyledTextBody>
             {textBody}

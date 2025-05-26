@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionWrapper, Top, Heading, Illustration, ButtonsRow, ServiceButton, DescriptionBlock, Descriptions, DescText, SubText } from './services.styles';
+import { SectionWrapper, Top, Heading, Illustration, ServiceButton, DescriptionBlock, Descriptions, DescText, SubText } from './services.styles';
 
 interface Service {
   label: string;
@@ -26,20 +26,17 @@ export const Services: React.FC<ServicesSectionProps> = ({
       
     </Top>
 
-    <ButtonsRow>
-      {services.map((svc) => (
-        <ServiceButton key={svc.label} gradient={svc.gradient}>
-          {svc.label}
-        </ServiceButton>
-      ))}
-    </ButtonsRow>
-
     <Descriptions>
       {services.map((svc) => (
-        <DescriptionBlock key={svc.label}>
-          <DescText>{svc.description}</DescText>
-          <SubText>{svc.subtext}</SubText>
-        </DescriptionBlock>
+        <>
+          <DescriptionBlock key={svc.label}>
+            <ServiceButton key={svc.label} gradient={svc.gradient}>
+              {svc.label}
+            </ServiceButton>
+            <DescText>{svc.description}</DescText>
+            <SubText>{svc.subtext}</SubText>
+          </DescriptionBlock>
+        </>
       ))}
     </Descriptions>
   </SectionWrapper>

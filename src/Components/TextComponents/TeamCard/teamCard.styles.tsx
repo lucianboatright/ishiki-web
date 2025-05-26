@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Card = styled.div({
   display: 'block',
   gap: '1.5rem',
-  maxWidth: '30rem',
+  maxWidth: '35rem',
   marginBottom: '3rem',
 });
 
@@ -24,13 +24,16 @@ export const Name = styled.h3({
   fontSize: '1.8rem',
   margin: 0,
   fontWeight: 100,
+  fontFamily: 'Helvetica, Arial, sans-serif',
+
 });
 
 export const Title = styled.p({
   fontSize: '1.5rem',
   marginTop: '1rem',
-  fontWeight: 100,
-  fontStyle: 'italic'
+  fontWeight: 200,
+  fontStyle: 'italic',
+  letterSpacing: '1.5px',
 });
 
 export const Description = styled.p({

@@ -4,15 +4,17 @@ import styled from 'styled-components'
 export const StyledContainer = styled.div({
     marginTop: '3rem',
     display: 'grid',
-    gridTemplateColumns: 'auto auto',
+    gridTemplateColumns: ' 5% 35% 45%',
+    height: '10rem',
     gap: '4rem',
-    width: '45rem',
-    marginRight: 'auto',
-    marginLeft: 'auto',
+    // maxWidth: '80rem',
+    // marginRight: 'auto',
+    // marginLeft: 'auto',
     
-    '@media (max-width: 768px)': {
-      width: '20rem',
-      paddingLeft: '2rem',
+    '@media (max-width: 1079px)': {
+      gridTemplateColumns: '15% auto',
+      width: 'auto',
+      paddingLeft: '0px',
     },
   });
   
@@ -24,43 +26,64 @@ export const StyledContainer = styled.div({
     marginTop: 'auto',
     marginBottom: 'auto',
   
-    '@media (max-width: 768px)': {
+    '@media (max-width: 1079px)': {
       marginRight: 'auto',
       marginLeft: 'auto',
     },
   });
   
-  export const StyledTextBody = styled.span({
+  export const StyledWord = styled.div({
+    alignContent: 'center',
+fontSize: '4rem',
+fontWeight: 100,
+fontFamily: 'Helvetica, Arial, sans-serif',
+marginLeft: '1rem',
+'@media (max-width: 1079px)': {
+  display: 'none',
+},
+});
+
+export const StyledTextBody = styled.span({
   fontSize: '2rem',
   alignContent: 'center',
   fontFamily: 'Newsreader, serif',
   fontWeight: 200,
   lineHeight: '1.2',
+  
+  '@media (max-width: 1079px)': {
+    marginLeft: '-1rem',
+    textAlign: 'left',
+    fontSize: '1.5rem'
+  },
+});
 
-    '@media (max-width: 768px)': {
-      textAlign: 'left',
-    },
-  });
-    
 interface InfoBarColorProps {
-    firstcolor?: string;
-    secondcolor?: string; 
+  firstcolor?: string;
+  secondcolor?: string; 
 }
 
 
 export const CircleLogo = styled.div<InfoBarColorProps>((props) => ({
-    width: '100px',
-    height: '100px',
+    fontSize: '4rem',
+    width: '7rem',
+    height: '7rem',
     borderRadius: '50%',
-    fontSize: '50px',
     color: 'white',
     textAlign: 'center',
-       fontFamily: 'Helvetica, Arial, sans-serif',
+    fontFamily: 'Helvetica, Arial, sans-serif',
     fontWeight: '100',
     alignContent: 'center',
     // marginTop: 'auto',
     // marginBottom: 'auto',
     background: `linear-gradient(95deg,${props.firstcolor}, ${props.secondcolor})`,
+    marginBottom: 'auto',
+    marginTop: 'auto',
+    '@media (max-width: 1079px)': {
+      fontSize: '3rem',
+      width: '5rem',
+      height: '5rem',
+      marginLeft: '10px',
 
+    },
 }));
     

@@ -104,3 +104,13 @@ export const HeaderListItem = styled.div({
     color: 'black',
   },
 });
+
+export const RightSection = styled.div({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '2rem',
+
+  '@media (max-width: 1200px)': {
+    gap: '1rem',
+  },
+});

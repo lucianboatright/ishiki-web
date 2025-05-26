@@ -21,6 +21,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'I',
       colorLeft: 'black',
       colorRight: 'grey',
+      word: 'INTENTIONAL',
     },
     {
       img: '',
@@ -28,6 +29,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'S',
       colorLeft: 'rgba(0, 74, 173, 1)',
       colorRight: 'rgba(83, 113, 255, 1)',
+      word: 'SYMBOLIC',
     },
     {
       img: '',
@@ -35,6 +37,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'H',
       colorLeft: 'rgba(75, 46, 143, 1)',
       colorRight: ' rgba(149, 35, 140, 1)',
+      word: 'HONEST',
     },
     {
       img: '',
@@ -42,6 +45,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'I',
       colorLeft: 'rgba(233, 23, 126, 1)',
       colorRight: 'rgba(234, 37, 74, 1)',
+      word: 'INCLUSIVE',
     },
     {
       img: '',
@@ -49,6 +53,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'K',
       colorLeft: 'rgba(222, 109, 4, 1)',
       colorRight: 'rgba(249, 218, 90, 1)',
+      word: 'KIND',
     },
     {
       img: '',
@@ -56,6 +61,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'I',
       colorLeft: 'rgba(128, 196, 63, 1)',
       colorRight: 'rgba(66, 178, 72, 1)',
+      word: 'IMPACTFUL',
     },
   ];
   const ourLensesData = [
@@ -129,8 +135,6 @@ const App: React.FC = () => {
       <main>
         <VideoSection section={'logo'} />
         <OurMission />
-        <About />
-        <OurValues title='Our Values' ourValueItems={ourValuesData}/>
         <OurLenses title='Our Lenses' ourLensesItems={ourLensesData} />
         <ServicesSection />
         <VideoTextComponent   
@@ -160,6 +164,8 @@ const App: React.FC = () => {
           secondCreditsTitle={'Music'}
           secondCredits={ForceMusic}
         />
+        <About />
+        <OurValues title='Our Values' ourValueItems={ourValuesData}/>
         <Team />
         <CollectiveSection />
         <Contact />

@@ -25,11 +25,16 @@ export const Illustration = styled('img')({
   flex: '1 1 40%',
   display: 'flex',
   justifyContent: 'center',
-  height: '20rem',
-
+  height: 'auto',
+  width: '100%',
+  
   '& svg, & img': {
     maxWidth: '100%',
     height: 'auto',
+  },
+  
+  '@media (max-width: 1300px)': {
+    flex: 'none',
   },
 });
 
@@ -51,13 +56,12 @@ export const ServiceButton = styled('div')<{ gradient: string }>(({ gradient }) 
   borderRadius: '.3rem',
   color: 'white',
   fontSize: '1rem',
-  cursor: 'pointer',
+  // cursor: 'pointer',
   transition: 'background-position 0.5s ease',
     textAlign: 'center',
-
-  '&:hover': {
-    backgroundPosition: 'right center',
-  },
+    marginBottom: '2rem',
+    marginLeft: 'auto',
+    marginRight: 'auto',
 }));
 
 export const Descriptions = styled.div({
@@ -65,6 +69,10 @@ export const Descriptions = styled.div({
   gridTemplateColumns: 'repeat(auto-fit, minmax(15rem, 1fr))',
   gap: '2rem',
   marginTop: '1rem',
+  
+  '@media (max-width: 1000px)': {
+    gridTemplateColumns: '1fr',
+  },
 });
 
 export const DescriptionBlock = styled.div({
