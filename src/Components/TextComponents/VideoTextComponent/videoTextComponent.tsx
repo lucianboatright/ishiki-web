@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../../Section/section';
-import { SectionWrapper, Title, Paragraph, CreditsTitle, CreditsGrid, CreditItem, CreditRole, CreditName, VideoWrapper } from './videoTextComponent.styles';
+import { SectionWrapper, Title, Paragraph, CreditsTitle, CreditsGrid, CreditItem, CreditRole, CreditName } from './videoTextComponent.styles';
 
 interface Credit {
     role: string;
