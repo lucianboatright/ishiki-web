@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         </Burger>
 
         <MenueWrapper>
-          <Dropdown header="About" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
+          <Dropdown header="About Ishiki" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
           <Dropdown header="Our Portfolio" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
           <Dropdown header="Our Team" dropDownItems={['Core team', 'Our collective']} />
           {/* <Dropdown header="Contact" dropDownItems={['Contact']} /> */}
