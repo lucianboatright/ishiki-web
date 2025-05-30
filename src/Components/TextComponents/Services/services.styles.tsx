@@ -5,7 +5,7 @@ export const SectionWrapper = styled('section')({
   color: 'white',
   padding: '4rem 2rem',
   fontFamily: "'Helvetica', sans-serif",
-  height: '100%',
+  // height: '100%',
 });
 
 export const Top = styled('div')({
@@ -16,6 +16,7 @@ export const Top = styled('div')({
 });
 
 export const Heading = styled('h1')({
+  marginLeft: '10%',
   fontSize: '3rem',
   lineHeight: 1.1,
   flex: '1 1 40%',
@@ -48,14 +49,14 @@ export const ButtonsRow = styled('div')({
 
 export const ServiceButton = styled('div')<{ gradient: string }>(({ gradient }) => ({
   flex: '1 1 15rem',
-  maxWidth: '20rem',
+  maxWidth: '80%',
   padding: '1.2rem 0',
   background: gradient,
   backgroundSize: '200% 100%',
   border: 'none',
   borderRadius: '.3rem',
   color: 'white',
-  fontSize: '1rem',
+  fontSize: '2rem',
   // cursor: 'pointer',
   transition: 'background-position 0.5s ease',
     textAlign: 'center',
@@ -77,16 +78,17 @@ export const Descriptions = styled.div({
 
 export const DescriptionBlock = styled.div({
   textAlign: 'center',
+  marginTop: '4rem',
 });
 
 export const DescText = styled.p({
   margin: '0 0 0.5rem',
-  fontSize: '0.9rem',
+  fontSize: '1.4rem',
 });
 
 export const SubText = styled.p({
   margin: 0,
-  fontSize: '0.85rem',
+  fontSize: '1.2rem',
   fontStyle: 'italic',
   color: '#ccc',
 });

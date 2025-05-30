@@ -37,11 +37,11 @@ const Header: React.FC = () => {
 
         <MenueWrapper>
           <Dropdown header="About" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
-          <Dropdown header="Work" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
-          <Dropdown header="Team" dropDownItems={['Core team', 'Our collective']} />
+          <Dropdown header="Our Portfolio" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
+          <Dropdown header="Our Team" dropDownItems={['Core team', 'Our collective']} />
           {/* <Dropdown header="Contact" dropDownItems={['Contact']} /> */}
-                  <HeaderListItem onClick={onOptionClicked(formatString('Contact'))}>Services</HeaderListItem>
-          <HeaderListItem onClick={onOptionClicked(formatString('Services'))}>Contact</HeaderListItem>
+                  <HeaderListItem onClick={onOptionClicked(formatString('Services'))}>Our Offer</HeaderListItem>
+          <HeaderListItem onClick={onOptionClicked(formatString('Contact'))}>Contact</HeaderListItem>
         </MenueWrapper>
 
         {isOpen && (

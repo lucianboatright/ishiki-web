@@ -27,37 +27,13 @@ export const ContentWrapper = styled.div({
 
 export const TextColumn = styled.div({
   flex: 1,
-  // maxWidth: '800px',
 });
 
 export const ImageColumn = styled.img({
   flex: 1,
   maxWidth: '800px',
-  // background: '#eaeaea',
   position: 'relative',
-  // aspectRatio: '4 / 3',
 
-  // '&::before, &::after': {
-  //   content: "''",
-  //   position: 'absolute',
-  //   background: '#999',
-  // },
-
-  // '&::before': {
-  //   width: '100%',
-  //   height: '1px',
-  //   top: '50%',
-  //   left: 0,
-  //   transform: 'rotate(45deg)',
-  // },
-
-  // '&::after': {
-  //   width: '100%',
-  //   height: '1px',
-  //   top: '50%',
-  //   left: 0,
-  //   transform: 'rotate(-45deg)',
-  // },
   width: '100%',
 height: 'auto',
 display: 'block',

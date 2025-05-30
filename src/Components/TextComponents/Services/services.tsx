@@ -1,16 +1,16 @@
 import React from 'react';
-import { SectionWrapper, Top, Heading, Illustration, ServiceButton, DescriptionBlock, Descriptions, DescText, SubText } from './services.styles';
+import { DescriptionBlock, Descriptions, DescText, Heading, Illustration, SectionWrapper, ServiceButton, SubText, Top } from './services.styles';
 
 interface Service {
   label: string;
-  gradient: string;      // e.g. 'linear-gradient(90deg, #3CEACE, #1154E0)'
+  gradient: string;     
   description: string;
   subtext: string;
 }
 
 interface ServicesSectionProps {
   title: string;
-  image: string; // e.g. an SVG or <img />
+  image: string; 
   services: Service[];
 }
 

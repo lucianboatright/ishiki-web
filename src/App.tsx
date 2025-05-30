@@ -29,7 +29,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       letter: 'S',
       colorLeft: 'rgba(0, 74, 173, 1)',
       colorRight: 'rgba(83, 113, 255, 1)',
-      word: 'SYMBOLIC',
+      word: 'SYMBIOTIC',
     },
     {
       img: '',
@@ -41,7 +41,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
     },
     {
       img: '',
-      text: 'Welcome diverse voices and perspectives. We value our relationships.',
+      text: 'Value our relationships & welcome diverse voices and perspectives.',
       letter: 'I',
       colorLeft: 'rgba(233, 23, 126, 1)',
       colorRight: 'rgba(234, 37, 74, 1)',
@@ -70,14 +70,14 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       img: '',
       colorTop: 'rgba(0, 74, 173, 1)',
       colorBottom: 'rgba(83, 113, 255, 1)',
-      text: 'Empowering ourselves with knowledge on personal wellness & self development',
+      text: 'Empowerment through knowledge on personal wellness & development',
     },
     {
       sectionTitle: 'SYNAPSE',
       img: '',
       colorTop: 'rgba(75, 46, 143, 1)',
       colorBottom: ' rgba(149, 35, 140, 1)',
-      text: 'Exploring ways to ethically blend the evolution of humanity, AI & technology',
+      text: 'Ethically blending the evolution of humanity, AI, & technology',
     },
     {
       sectionTitle: 'RISE',
@@ -91,7 +91,7 @@ import ServicesSection from './Components/Section/Sections/ServicesSection/servi
       img: '',
       colorTop: 'rgba(222, 109, 4, 1)',
       colorBottom: 'rgba(249, 218, 90, 1)',
-      text: 'Valuing Ancestral & Indigenous Wisdom & storytelling to further sustainable development ',
+      text: 'Sustainable development derived from ancestral & indigenous wisdom & storytelling',
     },
     {
       sectionTitle: 'BIOSPHERE',
