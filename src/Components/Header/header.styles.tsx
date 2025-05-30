@@ -1,20 +1,13 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header({
-  position: 'fixed',
-  top: '0',
-  left: '0',
   display: 'flex',
   justifyContent: 'space-between',
   padding: '1rem 2rem',
+  position: 'relative',
   background: 'black',
   color: 'white',
-  height: '2rem',
-  width: '100%',
-  zIndex: '1',
-  '@media (max-width: 1200px)': {
-    width: 'auto',
-  },
+  height: '3rem',
 });
 
 export const Logo = styled.div({
@@ -26,8 +19,9 @@ export const Logo = styled.div({
 export const MenueWrapper = styled.nav({
   display: 'flex',
   gap: '2rem',
+  marginLeft: '50px',
 
-  '@media (max-width: 1200px)': {
+  '@media (max-width: 1300px)': {
     display: 'none',
   },
 });
@@ -45,9 +39,8 @@ export const Burger = styled.div({
     borderRadius: '2px',
   },
 
-  '@media (max-width: 1200px)': {
+  '@media (max-width: 1300px)': {
     display: 'flex',
-    gap: '8',
   },
 });
 
@@ -63,7 +56,7 @@ export const MobileMenu = styled.div({
   padding: '1rem 2rem',
   zIndex: 999,
 
-  '@media (min-width: 1200px)': {
+  '@media (min-width: 1300px)': {
     display: 'none',
   },
 });
@@ -97,27 +90,11 @@ export const HeaderListItem = styled.div({
   width: '6rem',
   fontFamily: 'Helvetica, Arial, sans-serif',
   fontWeight: 100,
+  marginBottom: '1rem',
 
   '&:hover': {
     backgroundColor: 'white',
-        backgroundPosition: 'left bottom',
-
+    backgroundPosition: 'left bottom',
     color: 'black',
-  },
-});
-
-export const RightSection = styled.div({
-  display: 'flex',
-  alignItems: 'center',
-  gap: '2rem',
-
-  '@media (max-width: 1200px)': {
-    gap: '1rem',
-  },
-});
-
-export const StyledRight = styled.div({
-  display: 'flex',
-  '@media (max-width: 1200px)': {
   },
 });

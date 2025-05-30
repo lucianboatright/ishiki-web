@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Burger, HeaderListItem, HeaderWrapper, ListItem, Logo, MenueWrapper, MobileMenu, StyledList, StyledRight } from './header.styles';
+import { Burger, HeaderListItem, HeaderWrapper, ListItem, Logo, MenueWrapper, MobileMenu, StyledList } from './header.styles';
 import Dropdown from './Dropdown/dropdown';
 import logo from '../../assets/ISHIKI logo.jpg'
 
@@ -13,9 +13,12 @@ function formatString(input: string): string {
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null);
 
   const onOptionClicked = (value: any) => () => {
+    setSelectedOption(value);
     setIsOpen(false);
+    console.log(selectedOption);
     scrollToSection(value)
   };
 
@@ -23,34 +26,27 @@ const Header: React.FC = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <HeaderWrapper>
-      {/* <StyledLeft> */}
-        <Logo><img onClick={scrollToTop} src={logo} alt="ISHIKI" /></Logo>
-      {/* </StyledLeft> */}
-
-        <MenueWrapper>
-          <Dropdown header="About" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
-          <Dropdown header="Work" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
-          <Dropdown header="Team" dropDownItems={['Core team', 'Our collective']} />
-          <HeaderListItem onClick={onOptionClicked(formatString('Contact'))}>Services</HeaderListItem>
-          <HeaderListItem onClick={onOptionClicked(formatString('Services'))}>Contact</HeaderListItem>
-        </MenueWrapper>
-        
-      <StyledRight>
+      <Logo><img src={logo} alt="ISHIKI" /></Logo>
         <Burger onClick={() => setIsOpen(!isOpen)}>
           <span />
           <span />
           <span />
         </Burger>
-      </StyledRight>
+
+        <MenueWrapper>
+          <Dropdown header="About" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
+          <Dropdown header="Work" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
+          <Dropdown header="Team" dropDownItems={['Core team', 'Our collective']} />
+          {/* <Dropdown header="Contact" dropDownItems={['Contact']} /> */}
+                  <HeaderListItem onClick={onOptionClicked(formatString('Contact'))}>Services</HeaderListItem>
+          <HeaderListItem onClick={onOptionClicked(formatString('Services'))}>Contact</HeaderListItem>
+        </MenueWrapper>
 
         {isOpen && (
           <MobileMenu>
+            {/* <Dropdown header="About" dropDownItems={[]} /> */}
             <StyledList>
 
                     <ListItem onClick={onOptionClicked(formatString('Bio'))} key={Math.random()}>
