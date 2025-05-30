@@ -47,6 +47,7 @@ export const Burger = styled.div({
 
   '@media (max-width: 1200px)': {
     display: 'flex',
+    gap: '8',
   },
 });
 
@@ -112,5 +113,11 @@ export const RightSection = styled.div({
 
   '@media (max-width: 1200px)': {
     gap: '1rem',
+  },
+});
+
+export const StyledRight = styled.div({
+  display: 'flex',
+  '@media (max-width: 1200px)': {
   },
 });
