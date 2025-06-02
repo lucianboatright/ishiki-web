@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Wrapper = styled.section({
   scrollMarginTop: '100px',
   marginTop: '8rem',
+  '@media (max-width: 768px)': {
+    marginTop: '2rem',
+  },
 });
 
 export const Title = styled.h2({
@@ -11,9 +14,11 @@ export const Title = styled.h2({
   marginLeft: '50px',
   marginRight: '50px',
   fontWeight: 100,
-    fontFamily: 'Helvetica, Arial, sans-serif',
-
+  fontFamily: 'Helvetica, Arial, sans-serif',
+  
   '@media (max-width: 768px)': {
-    marginLeft: '1rem',
+    marginRight: '10px',
+    marginLeft: '10px',
+    fontSize: '2.5rem',
   },
 });

@@ -39,16 +39,15 @@ const Header: React.FC = () => {
           <Dropdown header="About Ishiki" dropDownItems={['Bio', 'Our mission', 'Our values', 'Our lenses']} />
           <Dropdown header="Our Portfolio" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
           <Dropdown header="Our Team" dropDownItems={['Core team', 'Our collective']} />
-          {/* <Dropdown header="Contact" dropDownItems={['Contact']} /> */}
                   <HeaderListItem onClick={onOptionClicked(formatString('Services'))}>Our Offer</HeaderListItem>
           <HeaderListItem onClick={onOptionClicked(formatString('Contact'))}>Contact</HeaderListItem>
         </MenueWrapper>
 
         {isOpen && (
           <MobileMenu>
-            {/* <Dropdown header="About" dropDownItems={[]} /> */}
             <StyledList>
 
+            <Dropdown header="About Ishiki" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
                     <ListItem onClick={onOptionClicked(formatString('Bio'))} key={Math.random()}>
                               Bio
                     </ListItem>
@@ -61,8 +60,7 @@ const Header: React.FC = () => {
                     <ListItem onClick={onOptionClicked(formatString('Our values'))} key={Math.random()}>
                               Our values
                     </ListItem>
-            </StyledList>
-            <Dropdown header="Work" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
+            <Dropdown header="Our Portfolio" dropDownItems={['Every drop counts', 'Unifide Fields', 'The Force']} />
                     <ListItem onClick={onOptionClicked(formatString('Every drop counts'))} key={Math.random()}>
                               Every drop counts
                     </ListItem>
@@ -72,13 +70,14 @@ const Header: React.FC = () => {
                     <ListItem onClick={onOptionClicked(formatString('The Force'))} key={Math.random()}>
                               The Force
                     </ListItem>
-            <Dropdown header="Team" dropDownItems={['Core team', 'Our collective']} />
+            <Dropdown header="Our Team" dropDownItems={['Core team', 'Our collective']} />
                     <ListItem onClick={onOptionClicked(formatString('Core team'))} key={Math.random()}>
                               Core team
                     </ListItem>
                     <ListItem onClick={onOptionClicked(formatString('Our collective'))} key={Math.random()}>
                     Our collective
                     </ListItem>
+            </StyledList>
           </MobileMenu>
         )}
     </HeaderWrapper>

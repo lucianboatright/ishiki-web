@@ -1,14 +1,54 @@
 import styled from 'styled-components';
 
+// export const HeaderWrapper = styled.header({
+//   display: 'flex',
+//   justifyContent: 'space-between',
+//   padding: '1rem 2rem',
+//   position: 'fixed',
+//   background: 'black',
+//   color: 'white',
+//   height: '3rem',
+//     // position: 'fixed',
+//   top: '0',
+//   left: '0',
+// });
+
 export const HeaderWrapper = styled.header({
   display: 'flex',
   justifyContent: 'space-between',
   padding: '1rem 2rem',
-  position: 'relative',
+  position: 'fixed', 
   background: 'black',
   color: 'white',
   height: '3rem',
+  top: 0,
+  left: 0,
+  width: '100%', 
+  zIndex: 1000,
+  '@media (max-width: 1200px)': {
+    marginRight: '5rem',
+    marginLeft: 'auto',
+  },
 });
+
+
+// export const HeaderWrapper = styled.header({
+//   position: 'fixed',
+//   top: '0',
+//   left: '0',
+//   display: 'flex',
+//   justifyContent: 'space-between',
+//   padding: '1rem 2rem',
+//   background: 'black',
+//   color: 'white',
+//   height: '2rem',
+//   // width: '100%',
+//   zIndex: '1',
+//   // '@media (max-width: 1200px)': {
+//   //   width: 'auto',
+//   // },
+// });
+
 
 export const Logo = styled.div({
   img: {
@@ -40,6 +80,8 @@ export const Burger = styled.div({
   },
 
   '@media (max-width: 1300px)': {
+    marginLeft: 'auto',
+    marginRight: '10%',
     display: 'flex',
   },
 });
@@ -51,9 +93,9 @@ export const MobileMenu = styled.div({
   background: 'black',
   position: 'absolute',
   top: '100%',
-  left: 0,
+  left: '35%',
   width: '100%',
-  padding: '1rem 2rem',
+  padding: '0rem 2rem 2rem 2rem',
   zIndex: 999,
 
   '@media (min-width: 1300px)': {
@@ -69,10 +111,16 @@ export const ListItem = styled.div({
   backgroundColor: 'white',
   color: 'black',
   alignContent: 'center',
+    fontFamily: 'Helvetica, Arial, sans-serif',
+
 });
 
 export const StyledList = styled.div({
-  marginLeft: '5rem',
+  // marginLeft: '5rem',
+  width: '20rem',
+  '@media (min-width: 1300px)': {
+    marginLeft: 'none',
+  },
 });
 
 export const HeaderListItem = styled.div({
