@@ -13,7 +13,7 @@ import BackToTopButton from './Components/BackButton/backButton';
 import VideoSection from './Components/Section/Pages/VideoSection/videoSection';
 import GlobalStyles from './GlobalStyles';
 import ServicesSection from './Components/Section/Pages/ServicesSection/servicesPage';
-import { ourLensesData, VideoParagraphs, ForceStaring, ForceMusic, ourValuesData } from './TextData';
+import { ourLensesData, VideoParagraphs, ForceStaring, ourValuesData } from './TextData';
 
 
 
